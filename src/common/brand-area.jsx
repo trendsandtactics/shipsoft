@@ -54,7 +54,7 @@ const BrandArea = ({service}) => {
                                 <Swiper 
                                 {...setting}
                                 loop={isLoop}
-                                modules={Navigation}
+                                modules={[Navigation]}
                                 className="brand-3-active swiper-container">
                                     {brand_img.map((item, i) => 
                                         <SwiperSlide key={i}>

@@ -75,7 +75,7 @@ const TestimonialArea = () => {
                      <div className="tp-testimonial-3-wrapper">
                         <div className="tp-testimonial-3-wrapper-thumb p-relative">
                            <Splide 
-                                 options={...setting_img}  
+                                 options={setting_img}  
                                  ref={mainRef}
                                  aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
                                  className="testimonial-navigation-active splide z-index-1 border-0"> 
@@ -93,7 +93,7 @@ const TestimonialArea = () => {
                   <div className="col-xl-7 col-lg-8">
                      <div className="tp-testimonial-3-content">
                         <Splide 
-                                options={...setting_text} 
+                                options={setting_text} 
                                 ref={thumbsRef} 
                                 className="testimonial-3-active splide">
                                 {slider_text.map((text, index) => 
