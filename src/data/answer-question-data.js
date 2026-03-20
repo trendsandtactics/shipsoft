@@ -1,3 +1,4 @@
+import React from "react";
 const answer_question_data = [
   {
     id: 1,

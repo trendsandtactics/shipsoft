@@ -1,3 +1,4 @@
+import React from "react";
 
 // home 01
 import blog_img_1 from "@assets/img/blog/img-1.jpg";

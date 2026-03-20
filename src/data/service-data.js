@@ -1,3 +1,4 @@
+import React from "react";
 
 // import img here 
 import service_img_1 from "@assets/img/services/services-1.jpg";

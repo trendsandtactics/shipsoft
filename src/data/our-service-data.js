@@ -1,3 +1,4 @@
+import React from "react";
 
 import service_icon_1 from "@assets/img/services/home-3/icon-1.png";
 import service_icon_2 from "@assets/img/services/home-3/icon-2.png";

@@ -1,3 +1,4 @@
+import React from "react";
 const accordion = [
   {
     id: 1,
