@@ -16,7 +16,6 @@ const setting = {
     autoplay: {
         delay: 100,
     },
-    autoplay : true,
     breakpoints: {
         '1200': {
             slidesPerView: 5,
