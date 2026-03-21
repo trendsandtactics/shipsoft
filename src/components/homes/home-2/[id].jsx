@@ -11,7 +11,7 @@ const ServiceDetails = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const service = offering_data.find((item) => item.id === Number(id));
+  const service = offering_data.find((item) => item.slug === id);
 
   if (!service) {
     return (
@@ -40,6 +40,7 @@ const ServiceDetails = () => {
               </div>
               <h2 className="tp-section-title mb-30">{service.title}</h2>
               <p className="text-muted" style={{ fontSize: '18px' }}>{service.description}</p>
+              <p className="mt-20 text-start" style={{ fontSize: '16px', lineHeight: '1.8' }}>{service.content}</p>
             </div>
           </div>
         </div>
