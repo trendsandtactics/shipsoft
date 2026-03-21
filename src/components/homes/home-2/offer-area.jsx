@@ -43,7 +43,7 @@ const OfferArea = () => {
                         </div>
                         <p>{item.description}</p>
                         <div className="tp-offer-wrapper-btn">
-                            <Link href={`/service-details/${item.slug}`}>Read Out More <i className="fa-solid fa-arrow-up-right"></i></Link>
+                            <Link href={`/${item.slug}`}>Read Out More <i className="fa-solid fa-arrow-up-right"></i></Link>
                         </div>
                         </div>
                     </div>

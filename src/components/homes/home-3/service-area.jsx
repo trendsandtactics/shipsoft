@@ -73,13 +73,13 @@ const ServiceArea = () => {
                                     <Image src={item.img} alt="theme-pure" />
                                     </div>
                                     <h4 className="tp-service-3-title">
-                                        <Link href={`/service-details/${item.id}`}>
+                                        <Link href={`/${item.id}`}>
                                         {item.title}
                                         </Link>
                                     </h4>
                                     <p>{item.description}</p>
                                     <div className="tp-service-btn">
-                                    <Link href={`/service-details/${item.id}`}>Read More <i className="fa-solid fa-arrow-up-right"></i></Link>
+                                    <Link href={`/${item.id}`}>Read More <i className="fa-solid fa-arrow-up-right"></i></Link>
                                     </div>
                                 </div>
                             </div>
