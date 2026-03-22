@@ -107,6 +107,7 @@ const Features = () => {
                                     <p className="feature-desc">The software transforms supply chain management by providing partners with real-time access to critical information such as inventory levels, order status, and shipment tracking. This multi-channel accessibility fosters seamless communication and collaboration, enabling partners to interact with the company efficiently and stay informed throughout the entire process.</p>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </section>
             </main>
