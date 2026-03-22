@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 import footer_logo from "@assets/img/logo/shipsoftlogo.webp";
-import SocialLinks, { CopyRight } from '@/src/common/social-links';
+import SocialLinks, { CopyRight } from "@/src/common/social-links";
 
 const office_locations = [
   {
     flag: "🇸🇬",
+    short: "SG",
     country: "Singapore",
     company: "SHIPSOFT SOLUTIONS PTE. LTD.",
     address: (
       <>
         100 TRAS ST <br />
         #16-01 <br />
-        SINGAPORE 079027.
+        SINGAPORE 079027
       </>
     ),
     email: "sales@shipsoft.co",
@@ -23,13 +24,14 @@ const office_locations = [
   },
   {
     flag: "🇦🇪",
+    short: "AE",
     country: "UAE",
     company: "SHIPSOFT SOLUTIONS FZE",
     address: (
       <>
-        SM- OFFICE- E1-1613B <br />
+        SM-OFFICE-E1-1613B <br />
         AJMAN FREE ZONE <br />
-        UNITES ARAB EMIRATES
+        UNITED ARAB EMIRATES
       </>
     ),
     email: "sales@shipsoft.co",
@@ -38,19 +40,20 @@ const office_locations = [
   },
   {
     flag: "🇸🇦",
+    short: "SA",
     country: "Saudi Arabia",
     company: "ShipSoft Company",
     address: (
       <>
-        Room-302, 3rd Floor, 4073, <br />
+        Room-302, 3rd Floor, 4073 <br />
         Prince Mohammed Bin Fahd Road <br />
-        Al Mazruiyah Dist., Pin Code 32415-7135, <br />
-        Kingdom of Saudi Arabia.
+        Al Mazruiyah Dist., Pin Code 32415-7135 <br />
+        Kingdom of Saudi Arabia
       </>
     ),
     email: "sales@shipsoft.co",
     phone: "+966 566492783",
-    map: "https://www.google.com/maps/search/Prince+Mohammed+Bin+Fahd+Road+Al+Mazruiyah+Saudi+Arabia",
+    map: "https://www.google.com/maps/search/Prince+Mohammed+Bin+Fahd+Road+Saudi+Arabia",
   },
 ];
 
@@ -74,7 +77,7 @@ const FooterTwo = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveOffice((prev) => (prev + 1) % office_locations.length);
-    }, 3500);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -83,99 +86,128 @@ const FooterTwo = () => {
 
   return (
     <>
-      <footer className="tp-footer-area footer-rich-wrap">
+      <footer className="shipsoft-footer">
+        <div className="footer-top-shape footer-top-shape-1"></div>
+        <div className="footer-top-shape footer-top-shape-2"></div>
+
         <div className="container container-large">
-          <div className="tp-footer-main-area pt-90 pb-60">
-            <div className="row align-items-start">
-              
-              {/* Left Section */}
-              <div className="col-xl-4 col-lg-4 col-md-12 mb-40">
-                <div className="tp-footer-widget">
-                  <div className="tp-footer-logo mb-25">
+          <div className="footer-main">
+            <div className="row gy-5 align-items-start">
+              {/* Left */}
+              <div className="col-xl-4 col-lg-4 col-md-12">
+                <div className="footer-brand-col">
+                  <div className="footer-logo-wrap">
                     <Link href="/">
                       <Image
                         src={footer_logo}
                         alt="ShipSoft"
-                        style={{ maxWidth: '240px', height: 'auto' }}
+                        style={{ maxWidth: "240px", height: "auto" }}
                       />
                     </Link>
                   </div>
 
                   <p className="footer-desc">{info}</p>
 
-                  <div className="footer-social-box">
-                    <h4 className="footer-mini-title">Connect With Us</h4>
-                    <div className="tp-footer-widget-social">
+                  <div className="footer-social-card">
+                    <div className="footer-social-head">
+                      <span className="footer-social-dot"></span>
+                      <h4>Follow & Connect</h4>
+                    </div>
+                    <p>Stay connected with our latest logistics and technology updates.</p>
+                    <div className="footer-social-links">
                       <SocialLinks />
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Middle Section */}
-              <div className="col-xl-3 col-lg-3 col-md-6 mb-40">
-                <div className="tp-footer-widget">
-                  <h3 className="tp-footer-widget-title rich-title">Quick Links</h3>
-                  <div className="tp-footer-widget-content">
-                    <ul className="footer-links-list">
-                      {service_links.map((item, i) => (
-                        <li key={i}>
-                          <Link href={item.link}>{item.title}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+              {/* Middle */}
+              <div className="col-xl-3 col-lg-3 col-md-5">
+                <div className="footer-links-col">
+                  <h3 className="footer-title">Quick Links</h3>
+                  <ul className="footer-links-list">
+                    {service_links.map((item, i) => (
+                      <li key={i}>
+                        <Link href={item.link}>
+                          <span className="link-arrow">→</span>
+                          <span>{item.title}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
 
-              {/* Right Section - Address Slider */}
-              <div className="col-xl-5 col-lg-5 col-md-6 mb-40">
-                <div className="tp-footer-widget">
-                  <h3 className="tp-footer-widget-title rich-title">Global Offices</h3>
+              {/* Right */}
+              <div className="col-xl-5 col-lg-5 col-md-7">
+                <div className="footer-office-col">
+                  <div className="footer-title-row">
+                    <h3 className="footer-title">Global Offices</h3>
+                    <div className="office-counter">
+                      <span>{String(activeOffice + 1).padStart(2, "0")}</span>
+                      <small> / {String(office_locations.length).padStart(2, "0")}</small>
+                    </div>
+                  </div>
 
-                  <div className="office-card-slider">
+                  <div className="office-card">
                     <div key={activeOffice} className="office-card-inner">
-                      <div className="office-badge">
-                        <span className="office-flag">{currentOffice.flag}</span>
-                        <span className="office-country">{currentOffice.country}</span>
+                      <div className="office-top">
+                        <div className="office-chip">
+                          <span className="office-flag">{currentOffice.flag}</span>
+                          <span className="office-short">{currentOffice.short}</span>
+                        </div>
+                        <div className="office-country">{currentOffice.country}</div>
                       </div>
 
                       <h4 className="office-company">{currentOffice.company}</h4>
+
+                      <div className="office-divider"></div>
 
                       <a
                         href={currentOffice.map}
                         target="_blank"
                         rel="noreferrer"
-                        className="office-line office-address"
+                        className="office-item"
                       >
-                        <i className="fa-sharp fa-light fa-location-dot"></i>
-                        <span>{currentOffice.address}</span>
+                        <div className="icon-box">
+                          <i className="fa-sharp fa-light fa-location-dot"></i>
+                        </div>
+                        <div className="office-text">{currentOffice.address}</div>
                       </a>
 
-                      <a
-                        href={`mailto:${currentOffice.email}`}
-                        className="office-line"
-                      >
-                        <i className="fa-light fa-envelope"></i>
-                        <span>{currentOffice.email}</span>
-                      </a>
+                      <div className="office-contact-row">
+                        <a
+                          href={`mailto:${currentOffice.email}`}
+                          className="office-item small-item"
+                        >
+                          <div className="icon-box">
+                            <i className="fa-light fa-envelope"></i>
+                          </div>
+                          <div className="office-text">{currentOffice.email}</div>
+                        </a>
 
-                      <a
-                        href={`tel:${currentOffice.phone.replace(/\s+/g, '')}`}
-                        className="office-line"
-                      >
-                        <i className="fa-light fa-phone-volume"></i>
-                        <span>{currentOffice.phone}</span>
-                      </a>
+                        <a
+                          href={`tel:${currentOffice.phone.replace(/\s+/g, "")}`}
+                          className="office-item small-item"
+                        >
+                          <div className="icon-box">
+                            <i className="fa-light fa-phone-volume"></i>
+                          </div>
+                          <div className="office-text">{currentOffice.phone}</div>
+                        </a>
+                      </div>
                     </div>
                   </div>
 
                   <div className="office-dots">
                     {office_locations.map((_, index) => (
-                      <span
+                      <button
                         key={index}
-                        className={index === activeOffice ? "dot active" : "dot"}
-                      ></span>
+                        className={`dot ${index === activeOffice ? "active" : ""}`}
+                        onClick={() => setActiveOffice(index)}
+                        aria-label={`Show office ${index + 1}`}
+                        type="button"
+                      />
                     ))}
                   </div>
                 </div>
@@ -183,20 +215,17 @@ const FooterTwo = () => {
             </div>
           </div>
 
-          <div className="tp-footer-copyright-area footer-bottom-bar pt-25 pb-25">
-            <div className="row align-items-center">
-              <div className="col-md-12 col-lg-6">
-                <div className="tp-footer-copyright-inner">
-                  <p className="copyright-text">
-                    <CopyRight />
-                  </p>
-                </div>
+          <div className="footer-bottom">
+            <div className="row align-items-center gy-3">
+              <div className="col-lg-6">
+                <p className="copyright-text">
+                  <CopyRight />
+                </p>
               </div>
-
-              <div className="col-md-12 col-lg-6">
-                <div className="tp-footer-copyright-inner text-lg-end footer-policy-links">
-                  <Link href="#">Terms and conditions</Link>
-                  <Link href="#">Privacy policy</Link>
+              <div className="col-lg-6">
+                <div className="footer-bottom-links">
+                  <Link href="#">Terms and Conditions</Link>
+                  <Link href="#">Privacy Policy</Link>
                 </div>
               </div>
             </div>
@@ -204,128 +233,230 @@ const FooterTwo = () => {
         </div>
 
         <style jsx>{`
-          .footer-rich-wrap {
-            background: #ffffff;
+          .shipsoft-footer {
             position: relative;
-            overflow: hidden;
-            border-top: 1px solid #eef2f7;
-          }
-
-          .footer-rich-wrap::before {
-            content: "";
-            position: absolute;
-            top: -120px;
-            right: -120px;
-            width: 320px;
-            height: 320px;
-            background: radial-gradient(circle, rgba(13,110,253,0.08) 0%, rgba(13,110,253,0) 70%);
-            border-radius: 50%;
-          }
-
-          .footer-rich-wrap::after {
-            content: "";
-            position: absolute;
-            bottom: -120px;
-            left: -120px;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(0,191,165,0.08) 0%, rgba(0,191,165,0) 70%);
-            border-radius: 50%;
-          }
-
-          .footer-desc {
-            color: #5f6168;
-            font-size: 17px;
-            line-height: 30px;
-            margin-bottom: 28px;
-            max-width: 380px;
-          }
-
-          .footer-social-box {
             background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-            border: 1px solid #e8eef7;
-            border-radius: 18px;
-            padding: 22px 24px;
-            box-shadow: 0 10px 30px rgba(20, 52, 105, 0.06);
-          }
-
-          .footer-mini-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: #111827;
-            margin-bottom: 16px;
-          }
-
-          .rich-title {
-            color: #111827;
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 24px;
-          }
-
-          .footer-links-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-          }
-
-          .footer-links-list li {
-            margin-bottom: 16px;
-          }
-
-          .footer-links-list li a {
-            color: #5f6168;
-            text-decoration: none;
-            font-size: 17px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
-            display: inline-block;
-          }
-
-          .footer-links-list li a:hover {
-            color: #0d6efd;
-            transform: translateX(5px);
-          }
-
-          .office-card-slider {
-            background: linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
-            border: 1px solid #e6edf6;
-            border-radius: 24px;
-            padding: 28px;
-            min-height: 320px;
-            box-shadow: 0 16px 45px rgba(15, 23, 42, 0.08);
-            position: relative;
             overflow: hidden;
+            border-top: 1px solid #edf2f7;
           }
 
-          .office-card-slider::before {
-            content: "";
+          .footer-top-shape {
             position: absolute;
-            top: 0;
-            right: 0;
-            width: 120px;
-            height: 120px;
-            background: radial-gradient(circle, rgba(13,110,253,0.12) 0%, rgba(13,110,253,0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            filter: blur(10px);
           }
 
-          .office-card-inner {
-            animation: fadeSlide 0.6s ease;
+          .footer-top-shape-1 {
+            top: -120px;
+            left: -100px;
+            width: 260px;
+            height: 260px;
+            background: rgba(13, 110, 253, 0.08);
+          }
+
+          .footer-top-shape-2 {
+            right: -120px;
+            bottom: -140px;
+            width: 340px;
+            height: 340px;
+            background: rgba(0, 163, 255, 0.08);
+          }
+
+          .footer-main {
+            padding: 90px 0 55px;
             position: relative;
             z-index: 2;
           }
 
-          .office-badge {
-            display: inline-flex;
+          .footer-logo-wrap {
+            margin-bottom: 26px;
+          }
+
+          .footer-desc {
+            font-size: 18px;
+            line-height: 1.9;
+            color: #5d6677;
+            max-width: 390px;
+            margin-bottom: 30px;
+          }
+
+          .footer-social-card {
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid rgba(13, 110, 253, 0.1);
+            border-radius: 24px;
+            padding: 24px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 15px 45px rgba(10, 37, 64, 0.08);
+            max-width: 430px;
+          }
+
+          .footer-social-head {
+            display: flex;
             align-items: center;
             gap: 10px;
-            background: #eef5ff;
+            margin-bottom: 10px;
+          }
+
+          .footer-social-head h4 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 700;
+            color: #0f172a;
+          }
+
+          .footer-social-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #0d6efd;
+            box-shadow: 0 0 18px rgba(13, 110, 253, 0.5);
+          }
+
+          .footer-social-card p {
+            margin: 0 0 18px;
+            color: #6b7280;
+            line-height: 1.8;
+            font-size: 15px;
+          }
+
+          .footer-title-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 24px;
+          }
+
+          .footer-title {
+            margin: 0 0 24px;
+            font-size: 42px;
+            line-height: 1.1;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -0.02em;
+          }
+
+          .footer-title-row .footer-title {
+            margin-bottom: 0;
+          }
+
+          .office-counter {
+            min-width: max-content;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: #eff6ff;
+            border: 1px solid #dbeafe;
             color: #0d6efd;
+            font-weight: 700;
+          }
+
+          .office-counter span {
+            font-size: 16px;
+          }
+
+          .office-counter small {
+            font-size: 14px;
+            color: #64748b;
+          }
+
+          .footer-links-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+
+          .footer-links-list li {
+            margin-bottom: 18px;
+          }
+
+          .footer-links-list li a {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: #556070;
+            transition: all 0.3s ease;
+          }
+
+          .footer-links-list li a:hover {
+            color: #0d6efd;
+            transform: translateX(6px);
+          }
+
+          .link-arrow {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #eff6ff;
+            color: #0d6efd;
+            font-size: 13px;
+            flex: 0 0 auto;
+          }
+
+          .office-card {
+            position: relative;
+            border-radius: 30px;
+            background: linear-gradient(145deg, #ffffff 0%, #f4f8ff 100%);
+            border: 1px solid rgba(13, 110, 253, 0.12);
+            box-shadow: 0 25px 70px rgba(15, 23, 42, 0.10);
+            padding: 34px;
+            overflow: hidden;
+          }
+
+          .office-card::before {
+            content: "";
+            position: absolute;
+            top: -70px;
+            right: -40px;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(13, 110, 253, 0.15) 0%, rgba(13, 110, 253, 0) 70%);
+          }
+
+          .office-card::after {
+            content: "";
+            position: absolute;
+            bottom: -80px;
+            left: -80px;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(0, 163, 255, 0.08) 0%, rgba(0, 163, 255, 0) 70%);
+          }
+
+          .office-card-inner {
+            position: relative;
+            z-index: 2;
+            animation: officeFade 0.6s ease;
+          }
+
+          .office-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 22px;
+            flex-wrap: wrap;
+          }
+
+          .office-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             padding: 10px 16px;
             border-radius: 999px;
-            font-size: 15px;
+            background: linear-gradient(180deg, #eaf3ff 0%, #dcecff 100%);
+            border: 1px solid #d9e9ff;
+            color: #0d6efd;
             font-weight: 700;
-            margin-bottom: 18px;
+            font-size: 14px;
           }
 
           .office-flag {
@@ -334,93 +465,137 @@ const FooterTwo = () => {
           }
 
           .office-country {
-            line-height: 1;
+            font-size: 16px;
+            font-weight: 700;
+            color: #1e293b;
           }
 
           .office-company {
-            font-size: 22px;
-            font-weight: 700;
+            font-size: 34px;
+            line-height: 1.2;
+            font-weight: 800;
             color: #111827;
-            margin-bottom: 20px;
-            line-height: 1.4;
+            margin-bottom: 22px;
+            max-width: 90%;
           }
 
-          .office-line {
+          .office-divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(13,110,253,0.22), rgba(13,110,253,0));
+            margin-bottom: 24px;
+          }
+
+          .office-item {
             display: flex;
             align-items: flex-start;
-            gap: 12px;
-            color: #5f6168;
+            gap: 16px;
             text-decoration: none;
-            font-size: 16px;
-            line-height: 29px;
-            margin-bottom: 14px;
+            color: #5a6474;
             transition: all 0.3s ease;
           }
 
-          .office-line i {
+          .office-item:hover {
+            color: #0d6efd;
+          }
+
+          .office-item + .office-item {
+            margin-top: 18px;
+          }
+
+          .icon-box {
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
+            border-radius: 14px;
+            background: #ffffff;
+            border: 1px solid #e6eefb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+          }
+
+          .icon-box i {
             color: #0d6efd;
             font-size: 17px;
-            margin-top: 6px;
-            min-width: 18px;
           }
 
-          .office-line:hover {
-            color: #0d6efd;
+          .office-text {
+            font-size: 18px;
+            line-height: 1.9;
+            color: inherit;
           }
 
-          .office-address span {
-            display: inline-block;
+          .office-contact-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 18px;
+            margin-top: 22px;
+          }
+
+          .small-item {
+            padding: 0;
           }
 
           .office-dots {
             display: flex;
+            align-items: center;
             gap: 10px;
-            margin-top: 18px;
-            padding-left: 6px;
+            margin-top: 22px;
+            padding-left: 8px;
           }
 
           .dot {
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
+            border: none;
             border-radius: 50%;
-            background: #d2d8e2;
+            background: #cfd8e3;
             transition: all 0.3s ease;
+            cursor: pointer;
+            padding: 0;
           }
 
           .dot.active {
-            background: #0d6efd;
-            transform: scale(1.15);
+            width: 32px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #0d6efd 0%, #49a3ff 100%);
           }
 
-          .footer-bottom-bar {
-            border-top: 1px solid #e9edf3;
+          .footer-bottom {
             position: relative;
             z-index: 2;
+            padding: 24px 0 28px;
+            border-top: 1px solid #e7edf5;
           }
 
           .copyright-text {
             margin: 0;
-            color: #5f6168;
+            font-size: 16px;
+            color: #667085;
           }
 
-          .footer-policy-links {
+          .footer-bottom-links {
             display: flex;
             justify-content: flex-end;
-            gap: 28px;
+            align-items: center;
+            gap: 30px;
             flex-wrap: wrap;
           }
 
-          .footer-policy-links a {
-            color: #5f6168;
+          .footer-bottom-links a {
+            color: #5d6677;
             text-decoration: none;
-            transition: 0.3s;
+            font-weight: 500;
+            transition: 0.3s ease;
           }
 
-          .footer-policy-links a:hover {
+          .footer-bottom-links a:hover {
             color: #0d6efd;
           }
 
-          @keyframes fadeSlide {
+          @keyframes officeFade {
             0% {
               opacity: 0;
               transform: translateY(18px);
@@ -431,18 +606,66 @@ const FooterTwo = () => {
             }
           }
 
+          @media (max-width: 1199px) {
+            .footer-title {
+              font-size: 34px;
+            }
+
+            .office-company {
+              font-size: 28px;
+              max-width: 100%;
+            }
+          }
+
           @media (max-width: 991px) {
-            .rich-title {
-              font-size: 26px;
+            .footer-main {
+              padding: 70px 0 45px;
             }
 
-            .office-card-slider {
-              min-height: auto;
+            .footer-title {
+              font-size: 30px;
             }
 
-            .footer-policy-links {
+            .office-card {
+              padding: 26px;
+            }
+
+            .office-company {
+              font-size: 24px;
+            }
+
+            .footer-bottom-links {
               justify-content: flex-start;
-              margin-top: 15px;
+            }
+          }
+
+          @media (max-width: 767px) {
+            .footer-desc {
+              font-size: 16px;
+              line-height: 1.8;
+            }
+
+            .footer-title {
+              font-size: 28px;
+            }
+
+            .office-company {
+              font-size: 22px;
+            }
+
+            .office-text {
+              font-size: 16px;
+              line-height: 1.75;
+            }
+
+            .office-item {
+              gap: 12px;
+            }
+
+            .icon-box {
+              width: 40px;
+              height: 40px;
+              min-width: 40px;
             }
           }
         `}</style>
