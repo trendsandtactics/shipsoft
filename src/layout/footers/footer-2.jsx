@@ -20,21 +20,55 @@ const office_locations = [
     ),
     email: "sales@shipsoft.co",
     phone: "+65 86065455",
-    info: <>The world’s first and largest digital market for crypto collectibles and non-fungible (NFTs). Buy</>,
-    map: "https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1",
-    address: <>100 TRAS ST, #16-01 <br /> SINGAPORE 079027</>,
-    mail_2: "sales@shipsoft.co",
-    mail_phone: <> sales@shipsoft.co <br /> +65 86065455</>,
+    map: "https://www.google.com/maps/search/100+TRAS+ST,+SINGAPORE+079027"
+  },
+  {
+    flag: "🇦🇪",
+    short: "UAE",
+    country: "United Arab Emirates",
+    company: "SHIPSOFT SOLUTIONS FZE",
+    address: (
+      <>
+        SM- OFFICE- E1-1613B <br />
+        AJMAN FREE ZONE <br />
+        UNITED ARAB EMIRATES
+      </>
+    ),
+    email: "sales@shipsoft.co",
+    phone: "+971 43 704077",
+    map: "https://www.google.com/maps/search/AJMAN+FREE+ZONE,+UNITED+ARAB+EMIRATES"
+  },
+  {
+    flag: "🇸🇦",
+    short: "SA",
+    country: "Saudi Arabia",
+    company: "ShipSoft Company",
+    address: (
+      <>
+        Room-302, 3rd Floor, 4073, <br />
+        Prince Mohammed Bin Fahd Road <br />
+        Al Mazruiyah Dist., Pin Code 32415-7135, <br />
+        Kingdom of Saudi Arabia.
+      </>
+    ),
+    email: "sales@shipsoft.co",
+    phone: "+966 566492783",
+    map: "https://www.google.com/maps/search/Prince+Mohammed+Bin+Fahd+Road,+Saudi+Arabia"
+  }
+];
+
+const footer_content = {
+    info: <>Shipsoft is a comprehensive web-based ERP solution tailored for the logistics industry.</>,
     service_links: [
         {title: "Home", link: "/"},
         {title: "About us", link: "/about"},
         {title: "Features", link: "/features"},
         {title: "Modules", link: "/modules"},
-        {title: "Info", link: "/info"},
+        {title: "Blog", link: "/blog"},
         {title: "Contact us", link: "/contact"},
     ],
-}
-const {contact_us, mail, contact_text, phone, info, map, address, mail_2, mail_phone, service_links} = footer_content
+};
+const { info, service_links } = footer_content;
 
 const FooterTwo = () => {
   const [activeOffice, setActiveOffice] = useState(0);
