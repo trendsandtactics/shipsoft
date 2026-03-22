@@ -2,7 +2,7 @@ import Breadcrumb from '@/src/common/breadcrumb/breadcrumb';
 import HeaderOne from '@/src/layout/headers/header';
 import React from 'react';
 import ContactArea from './contact-area';
-import FooterThree from '@/src/layout/footers/footer-3';
+import FooterThree from '@/src/layout/footers/footer-2';
 import Image from 'next/image';
 
 const Contact = () => {
