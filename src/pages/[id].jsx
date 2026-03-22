@@ -254,8 +254,8 @@ const ServiceDetails = () => {
               </div>
             </div>
             <div className="col-lg-8">
-              <div className="service-details-thumb mb-50" style={{ borderRadius: '24px', overflow: 'hidden', padding: '60px 20px', boxShadow: '0 20px 50px rgba(13, 110, 253, 0.08)', position: 'relative', width: '100%', minHeight: '350px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(145deg, #ffffff 0%, #f0f7ff 100%)', border: '1px solid rgba(13, 110, 253, 0.1)' }}>
-                <Image src={service.img} alt={service.title} width={300} height={300} style={{ objectFit: 'contain', filter: 'drop-shadow(0 15px 25px rgba(0,0,0,0.1))' }} />
+              <div className="service-details-thumb mb-50" style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 50px rgba(13, 110, 253, 0.08)', position: 'relative', width: '100%', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(145deg, #ffffff 0%, #f0f7ff 100%)', border: '1px solid rgba(13, 110, 253, 0.1)' }}>
+                <Image src={service.img} alt={service.title} fill style={{ objectFit: 'cover', filter: 'drop-shadow(0 15px 25px rgba(0,0,0,0.1))' }} />
               </div>
               <div className="service-details-content">
                 <h2 className="tp-section-title mb-30" style={{ color: '#0f172a', fontWeight: '800', fontSize: '2.5rem', letterSpacing: '-0.5px' }}>{service.title}</h2>
