@@ -79,9 +79,10 @@ const Blog = () => {
                   </div>
               </div>
           </section>
-         <BlogArea />
+        
          
       </main>
+       <BlogArea />
       <FooterContact />
       <FooterThree />
     </Wrapper>
