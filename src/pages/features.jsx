@@ -1,0 +1,93 @@
+import React from 'react';
+import Wrapper from '../layout/wrapper';
+import SEO from '../common/seo';
+import Header from '../layout/headers/header';
+import Breadcrumb from '../common/breadcrumb/breadcrumb';
+import FooterContact from '../layout/footers/footer-contact';
+import FooterThree from '../layout/footers/footer-3';
+
+const Features = () => {
+    return (
+        <Wrapper>
+            <SEO pageTitle={"Features"} />
+            <Header />
+            <main>
+                <Breadcrumb top_title="Our product" page_title="Features" />
+                
+                <section className="tp-features-area pt-120 pb-60">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="section-title-wrapper mb-50 text-center">
+                                    <span className="tp-section-title__pre">Our product</span>
+                                    <h3 className="tp-section-title">ShipSoft Features</h3>
+                                    <p className="mt-20" style={{ fontSize: '18px', fontWeight: '500', color: '#1a1a1a' }}>
+                                        A complete ERP software for logistics industry
+                                    </p>
+                                </div>
+                                <div className="mb-60" style={{ fontSize: '16px', lineHeight: '1.8', color: '#555' }}>
+                                    <p className="mb-20">Shipsoft is a comprehensive web-based ERP solution tailored for the logistics industry, trusted by freight forwarders worldwide to streamline operations, gain actionable insights, and drive growth. Built on a modular architecture, Shipsoft allows businesses to choose and implement only the modules they need—ensuring flexibility and scalability.</p>
+                                    <p>The platform includes integrated systems for Customer Relationship Management, Accounts, Freight, Transport, Warehouse, Distribution, and E-commerce. This modular design enables businesses to optimize key processes, improve efficiency, and boost sales and revenue—while adapting the system to fit their unique operational requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row">
+                            {/* Architecture & Technology */}
+                            <div className="col-lg-6 col-md-6 mb-40">
+                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
+                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Architecture & Technology</h4>
+                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>Shipsoft uses the PHP Laravel Web Application Stack and Oracle as its data store – One of the most widely used Relational Database Management System (RDBMS). Shipsoft leverages a robust three-tier Architecture, comprising of the UI, Web and Data Tier – ensuring scalability, maintainability, and performance. Designed for accessibility and convenience, Shipsoft can be accessed seamlessly through web browsers and smartphones, enabling users to manage operations anytime, anywhere.</p>
+                                </div>
+                            </div>
+
+                            {/* Cloud Application */}
+                            <div className="col-lg-6 col-md-6 mb-40">
+                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
+                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Cloud Application</h4>
+                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>Shipsoft Solutions offers an on-demand, web-based model that significantly reduces the need for heavy IT infrastructure. By handling key aspects such as maintenance, upgrades, data security, performance, support, and business continuity, we allow users to focus on their core operations. Our cost-effective, pay-per-use subscription model further lowers the total cost of ownership, making advanced logistics management both accessible and affordable for businesses of all sizes.</p>
+                                </div>
+                            </div>
+
+                            {/* Modular Architecture */}
+                            <div className="col-lg-6 col-md-6 mb-40">
+                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
+                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Modular Architecture</h4>
+                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>Shipsoft Solutions features a modular design that enables businesses to select only the functionalities they need, tailored to their specific operational requirements. As their needs evolve, customers can easily integrate additional modules without disrupting existing workflows. The system is fully scalable and extensible, designed to grow with your business and adapt to the ever-changing demands of the logistics and supply chain industry.</p>
+                                </div>
+                            </div>
+
+                            {/* Scalable & Extensible */}
+                            <div className="col-lg-6 col-md-6 mb-40">
+                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
+                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Scalable & Extensible</h4>
+                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>Shipsoft is built on a highly scalable and extensible architecture, designed to grow with your organization. Its flexible framework allows the system to evolve and adapt to shifting industry demands with minimal disruption to existing functionalities, ensuring long-term reliability and smooth transitions as your business requirements change.</p>
+                                </div>
+                            </div>
+
+                            {/* Document Management */}
+                            <div className="col-lg-6 col-md-6 mb-40">
+                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
+                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Document Management</h4>
+                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>Efficient workflow relies on the ability to store and manage documents in digital form. Shipsoft allows users to scan, categorize, and securely store critical documents, such as quotations, invoices, and other essential records, directly against their corresponding shipment or client profile. This module is designed to support the full shipment lifecycle, from initial booking through to final payment settlement, ensuring streamlined operations and easy access to important information</p>
+                                </div>
+                            </div>
+
+                            {/* Customer Services */}
+                            <div className="col-lg-6 col-md-6 mb-40">
+                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
+                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Customer Services</h4>
+                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>The software transforms supply chain management by providing partners with real-time access to critical information such as inventory levels, order status, and shipment tracking. This multi-channel accessibility fosters seamless communication and collaboration, enabling partners to interact with the company efficiently and stay informed throughout the entire process.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <FooterContact />
+            <FooterThree />
+        </Wrapper>
+    );
+};
+
+export default Features;
