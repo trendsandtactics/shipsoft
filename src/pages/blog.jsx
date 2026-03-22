@@ -4,6 +4,7 @@ import SEO from "../common/seo";
 import Header from "../layout/headers/header";
 import FooterContact from "../layout/footers/footer-contact";
 import FooterThree from "../layout/footers/footer-2";
+import BlogArea from "./blog-area";
 import Link from 'next/link';
 import { blogs } from '../data/blog-content';
 
@@ -80,6 +81,7 @@ const Blog = () => {
           </section>
          
       </main>
+      <BlogArea />
       <FooterContact />
       <FooterThree />
     </Wrapper>
