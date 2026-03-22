@@ -38,31 +38,6 @@ const FooterTwo = () => {
                 
                 <div className="container container-large">
 
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="tp-footer-top-area">
-                                <div className="row align-items-center">
-                                <div className="col-lg-6">  
-                                    <div className="tp-footer-top-contact">
-                                        <a href={`mailto:${mail}`}>{contact_us}</a>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="tp-footer-top-right d-flex justify-content-start justify-content-lg-end">
-                                        <div className="tp-footer-top-right-headphone">
-                                            <Image src={headphone} alt="ShipSoft" />
-                                        </div>
-                                        <div className="tp-footer-top-right-content">
-                                            <p>{contact_text}</p>
-                                            <a href={`tel:${phone}`}>{phone}</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div className="tp-footer-main-area">
                         <div className="row">
                             <div className="col-xl-3 col-lg-4 col-md-6">
