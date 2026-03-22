@@ -140,7 +140,7 @@ const ServiceDetails = () => {
   let service = rawService;
   
   if (rawService) {
-    const override = updated_services_content.find(uc => rawService.title?.toLowerCase().includes(uc.match.toLowerCase()));
+    const override = updated_services_content.find(uc => rawService.slug?.toLowerCase().includes(uc.match.toLowerCase().replace(/\s+/g, '-')));
     if (override) {
       service = { ...rawService, description: override.description, content: override.content, features: override.features };
     }
