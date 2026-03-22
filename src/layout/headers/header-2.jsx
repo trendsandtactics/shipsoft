@@ -77,7 +77,7 @@ const HeaderTwo = () => {
                                           <li><Link href="/about">About us</Link></li>
                                           <li><Link href="/features">Features</Link></li>
                                           <li><Link href="/modules">Modules</Link></li>
-                                          <li><Link href="/info">Info</Link></li>
+                                          <li><Link href="/blog">Blog</Link></li>
                                           <li><Link href="/contact">Contact us</Link></li>
                                        </ul>
                                     </nav>

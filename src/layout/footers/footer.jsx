@@ -24,7 +24,7 @@ const footer_content = {
         {title: "About us", link: "/about"},
         {title: "Features", link: "/features"},
         {title: "Modules", link: "/modules"},
-        {title: "Info", link: "/info"},
+        {title: "Blog", link: "/blog"},
         {title: "Contact us", link: "/contact"},
     ],
 }
