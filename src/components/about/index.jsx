@@ -11,7 +11,7 @@ import BrandArea from '@/src/common/brand-area';
 import TeamArea from '@/src/common/team-area';
 import BlogArea from '@/src/common/blog-area';
 import FooterContact from '@/src/layout/footers/footer-contact';
-import FooterThree from '@/src/layout/footers/footer-3';
+import FooterThree from '@/src/layout/footers/footer-2';
 
 const About = () => {
     return (
