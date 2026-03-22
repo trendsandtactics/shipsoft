@@ -40,21 +40,8 @@ const Features = () => {
                 }
             `}</style>
             <main>
-                <Breadcrumb top_title="Our product" page_title="Features" />
-                
-                <section className="tp-features-area pt-120 pb-60">
                 <section className="features-hero" style={{ background: 'linear-gradient(135deg, #0d6efd 0%, #0043b8 100%)', color: 'white', paddingTop: '180px', paddingBottom: '100px', textAlign: 'center' }}>
                     <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="section-title-wrapper mb-50 text-center">
-                                    <span className="tp-section-title__pre">Our product</span>
-                                    <h3 className="tp-section-title">ShipSoft Features</h3>
-                                    <p className="mt-20" style={{ fontSize: '18px', fontWeight: '500', color: '#1a1a1a' }}>
-                                        A complete ERP software for logistics industry
-                                    </p>
-                                </div>
-                                <div className="mb-60" style={{ fontSize: '16px', lineHeight: '1.8', color: '#555' }}>
                         <div className="row justify-content-center">
                             <div className="col-lg-10">
                                 <span style={{ textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '600', color: '#bfdbfe', fontSize: '14px', display: 'block', marginBottom: '15px' }}>Our product</span>
@@ -130,14 +117,10 @@ const Features = () => {
 
                             {/* Customer Services */}
                             <div className="col-lg-6 col-md-6 mb-40">
-                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
-                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Customer Services</h4>
-                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>The software transforms supply chain management by providing partners with real-time access to critical information such as inventory levels, order status, and shipment tracking. This multi-channel accessibility fosters seamless communication and collaboration, enabling partners to interact with the company efficiently and stay informed throughout the entire process.</p>
                                 <div className="feature-card">
                                     <h4 className="feature-title">Customer Services</h4>
                                     <p className="feature-desc">The software transforms supply chain management by providing partners with real-time access to critical information such as inventory levels, order status, and shipment tracking. This multi-channel accessibility fosters seamless communication and collaboration, enabling partners to interact with the company efficiently and stay informed throughout the entire process.</p>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </section>
