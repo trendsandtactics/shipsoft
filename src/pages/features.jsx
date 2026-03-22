@@ -40,7 +40,7 @@ const Features = () => {
                 }
             `}</style>
             <main>
-                <section className="features-hero" style={{ background: 'linear-gradient(135deg, #0d6efd 0%, #0043b8 100%)', color: 'white', paddingTop: '180px', paddingBottom: '100px', textAlign: 'center' }}>
+                <section className="features-hero" style={{ backgroundColor: '#2CADE3', color: 'white', paddingTop: '180px', paddingBottom: '100px', textAlign: 'center' }}>
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-10">

@@ -2,7 +2,6 @@ import React from 'react';
 import Wrapper from '../layout/wrapper';
 import SEO from '../common/seo';
 import Header from '../layout/headers/header';
-import Breadcrumb from '../common/breadcrumb/breadcrumb';
 import FooterContact from '../layout/footers/footer-contact';
 import FooterThree from '../layout/footers/footer-3';
 
@@ -12,7 +11,15 @@ const TermsAndConditions = () => {
             <SEO pageTitle={"Terms and Conditions"} />
             <Header />
             <main>
-                <Breadcrumb top_title="Legal" page_title="Terms and Conditions" />
+                <section className="terms-hero" style={{ backgroundColor: '#2CADE3', color: 'white', paddingTop: '180px', paddingBottom: '100px', textAlign: 'center' }}>
+                    <div className="container">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-10">
+                                <h1 className="mb-20" style={{ color: '#ffffff', fontSize: '3rem', fontWeight: '800' }}>Terms and Conditions</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 
                 <section className="terms-area pt-100 pb-100">
                     <div className="container">
