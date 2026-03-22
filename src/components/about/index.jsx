@@ -23,11 +23,6 @@ const About = () => {
             <OfferArea />
             <SupportArea />
             <VideoArea />
-            <TestimonialFeature />
-            <TestimonialArea />
-            <BrandArea />
-            <TeamArea />
-            <BlogArea />
             <FooterContact />
           </main>
           <FooterThree />
