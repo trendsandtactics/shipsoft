@@ -11,6 +11,7 @@ import { CheckCircle, ChevronRight, LayoutGrid } from 'lucide-react';
 const updated_services_content = [
   {
     match: "Customer Relationship Management",
+    img: "/assets/img/service/crm.png",
     description: `Our CRM module is purpose-built to help businesses drive profitability by streamlining customer interactions and internal workflows. With a focus on improving efficiency, personalization, and data-driven decision-making, this powerful tool supports every stage of the customer lifecycle.`,
     content: `By consolidating all customer-related data and interactions in one centralized system, the CRM module empowers your team to better understand and serve your clients. It strengthens customer engagement, boosts retention, and supports long-term business growth through smarter, more strategic relationship management.\n\nEmpower yourself to manage all your company’s relationships with customers and potential customers through technology.`,
     features: [
@@ -29,6 +30,7 @@ const updated_services_content = [
   },
   {
     match: "Freight Management",
+    img: "/assets/img/service/freight.png",
     description: `Shipsoft Solutions is a leading logistics technology provider, delivering innovative freight management software built to simplify and optimize freight forwarding. Designed with logistics professionals in mind, our user-friendly platform replaces manual processes with automated workflows—enhancing accuracy, speed, and overall efficiency.\n\nShipsoft empowers freight forwarders to digitize their operations, improve productivity, and reduce delays and errors. Its flexible architecture supports seamless integration with partners, vendors, and customers, enabling real-time collaboration and communication across the global supply chain.`,
     content: `With real-time access to data and shipment status, businesses gain agility, transparency, and control—allowing them to respond faster to market changes and customer needs. More than just software, Shipsoft Solutions is a strategic partner in building a smarter, more connected, and future-ready logistics ecosystem.\n\nThis connectivity ensures that all stakeholders are synchronized, facilitating smooth communication and collaboration. Consequently, freight forwarders can conduct their business from anywhere, enhancing their ability to respond swiftly to market changes and customer demands. This capability not only strengthens business relationships but also enhances customer satisfaction by providing real-time updates and transparency throughout the shipping process. In essence, Shipsoft Solutions has not only equipped freight forwarders with the tools to thrive in a digital age but has also set a new standard for efficiency and connectivity in the logistics sector, paving the way for a more integrated and responsive supply chain ecosystem.\n\nA comprehensive freight management system which provide total control and visibility of shipments at all times to customers.`,
     features: [
@@ -57,6 +59,7 @@ const updated_services_content = [
   },
   {
     match: "Warehouse Management",
+    img: "/assets/img/service/warehouse.png",
     description: `Shipsoft’s WMS is a robust, customizable solution that delivers full visibility and control over your warehouse operations. Designed to streamline processes from receiving to shipping, it helps businesses boost efficiency, accuracy, and productivity.`,
     content: `Shipsoft’s WMS is more than an inventory tool—it’s an integrated solution that enhances every aspect of warehouse management. With real-time visibility, process optimization, and smart integration, it empowers businesses to reduce costs, increase efficiency, and stay ahead in a competitive market.\n\nOur WMS is capable of interface with clients and suppliers which helps to streamline processes and improve productivity and save time and money.\n\nIn today’s dynamic economy, connected consumers wants flexibility and visibility ever changing environment. Businesses need the ability to respond quickly to customers request based on live information available from our software/portal. Our cloud-based warehouse management system prepares you for tomorrow’s supply chain, today.`,
     features: [
@@ -87,6 +90,7 @@ const updated_services_content = [
   },
   {
     match: "Transport Management",
+    img: "/assets/img/service/transport.png",
     description: `Shipsoft’s Transport Management System (TMS) is a vital solution for modern logistics, designed to plan, execute, and monitor the movement of goods with maximum efficiency. Using advanced algorithms and real-time data, the system optimizes routing, consolidates shipments, and manages carriers—reducing costs while improving delivery speed and reliability.`,
     content: `With seamless integration into existing logistics and enterprise systems, Shipsoft’s TMS ensures smooth data exchange across the supply chain. This empowers stakeholders with real-time insights and enables faster, more informed decision-making.\n\nMoreover, the Transport Management System enhances visibility and control over the entire transportation process. Companies can monitor shipments in real-time, track performance metrics, and generate detailed reports on various aspects of their transportation operations. This level of insight allows businesses to identify inefficiencies, mitigate risks, and continuously improve their logistics strategies. Additionally, a robust transport management system supports compliance with regulatory requirements and industry standards, ensuring that all transportation activities are conducted legally and ethically. In essence, a TMS is not just a tool for managing transportation; it is a strategic asset that drives operational excellence, cost savings, and customer satisfaction in the logistics industry.\n\nThe module is designed to meet all the requirements for processing shipments.`,
     features: [
@@ -100,6 +104,7 @@ const updated_services_content = [
   },
   {
     match: "Accounts Management",
+    img: "/assets/img/service/account.png",
     description: `An Accounts Management System (AMS) is a critical tool for ensuring the financial stability, accuracy, and transparency of any organization. It streamlines and automates core accounting functions—such as general ledger, accounts payable and receivable, and financial reporting—providing real-time insights into the company’s financial health. By automating routine tasks like invoice processing, account reconciliation, and report generation, the AMS reduces errors and allows finance teams to focus on strategic planning and analysis.`,
     content: `The system enhances decision-making by delivering accurate, timely financial data to stakeholders, while also supporting regulatory compliance through detailed record-keeping and audit trails. It enables businesses to monitor cash flow, track transactions, and enforce financial controls with ease. With a centralized platform, the AMS promotes better collaboration across departments and ensures standardized financial processes throughout the organization.\n\nModern accounts management software also features intuitive, user-friendly interfaces and customizable dashboards, allowing businesses to tailor financial reports to their specific needs. This adaptability makes it easier to manage complex financial operations while maintaining full control and visibility.\n\nIn essence, an AMS is more than just an accounting tool—it’s a strategic asset that supports efficient financial management, strengthens compliance, and drives sustainable growth in a competitive business environment.\n\nDesigned to serve dealers and agencies, provides a single platform for suppliers, agencies, and customers, features automatic email alerts and notifications, along with email-based approvals.`,
     features: [
@@ -116,6 +121,7 @@ const updated_services_content = [
   },
   {
     match: "Distribution Management",
+    img: "/assets/img/service/distribute.png",
     description: `A Distribution Management System (DMS) is essential for streamlining the movement of goods from manufacturers to customers. By integrating with warehouse and transport management systems, it ensures seamless coordination across the supply chain. With real-time inventory visibility, businesses can maintain optimal stock levels, reduce holding costs, and avoid shortages or overstocking.`,
     content: `The DMS automates order processing, picking, packing, and shipping—minimizing errors and speeding up deliveries. This leads to improved accuracy, faster fulfilment, and greater customer satisfaction. It also offers robust tracking and reporting tools, enabling data-driven decisions that enhance efficiency and reduce costs.\n\nIn today’s competitive market, a DMS is more than a logistics tool—it’s a strategic solution that empowers businesses to adapt, scale, and deliver superior service.\n\nDesigned to serve dealers and agencies, provides a single platform for suppliers, agencies, and customers, features automatic email alerts and notifications, along with email-based approvals.`,
     features: [
@@ -128,6 +134,17 @@ const updated_services_content = [
       { title: "Price Control", description: "Minimum selling price mechanism to control the price." },
       { title: "Insights", description: "Customized Reports to provide to provide better visibility and control for the management." },
       { title: "Automated Workflow", description: "Integrates Sales Order Process, once order is placed, it automatically notify concern department to prepare Delivery Note, Schedule Transport and prepare Invoices." }
+    ]
+  },
+  {
+    match: "E-Commerce",
+    img: "/assets/img/service/E-commerec.png",
+    description: `Complete e-commerce logistics solutions designed to handle the high-volume, fast-paced demands of online retail.`,
+    content: `Our E-commerce fulfillment module helps you seamlessly connect your online store with warehouse and shipping operations, ensuring quick and accurate order processing.\n\nAutomate inventory updates, tracking, and customer notifications, ensuring that your customers get the best possible experience when purchasing from you.`,
+    features: [
+      { title: "Order Synchronization", description: "Automatically import orders from your webstore for immediate processing." },
+      { title: "Inventory Tracking", description: "Real-time stock updates to prevent overselling." },
+      { title: "Last-Mile Delivery", description: "Integration with major couriers for fast, reliable last-mile delivery." }
     ]
   }
 ];
@@ -143,6 +160,7 @@ const ServiceDetails = () => {
     const override = updated_services_content.find(uc => rawService.slug?.toLowerCase().includes(uc.match.toLowerCase().replace(/\s+/g, '-')));
     if (override) {
       service = { ...rawService, description: override.description, content: override.content, features: override.features };
+      if (override.img) service.img = override.img;
     }
   }
 
@@ -165,15 +183,51 @@ const ServiceDetails = () => {
       <style jsx>{`
         .tp-feature-card {
           background-color: #ffffff;
-          border-radius: 12px;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+          border-radius: 16px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
           transition: all 0.3s ease;
-          border: 1px solid rgba(0,0,0,0.03);
+          border: 1px solid #e2e8f0;
         }
         .tp-feature-card:hover {
           transform: translateY(-5px);
-          box-shadow: 0 15px 35px rgba(13, 110, 253, 0.15);
-          border-color: rgba(13, 110, 253, 0.2);
+          box-shadow: 0 20px 40px rgba(13, 110, 253, 0.12);
+          border-color: rgba(13, 110, 253, 0.3);
+        }
+        .icon-wrapper {
+          transition: all 0.3s ease;
+        }
+        .tp-feature-card:hover .icon-wrapper {
+          background-color: #0d6efd !important;
+          color: #ffffff !important;
+        }
+        .tp-service-widget-item {
+          background: #ffffff;
+          padding: 30px;
+          border-radius: 20px;
+          border: 1px solid #e2e8f0;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        }
+        .tp-service-widget-tab ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        .tp-service-widget-tab ul li a {
+          padding: 16px 24px;
+          border-radius: 12px;
+          transition: all 0.3s ease;
+          margin-bottom: 8px;
+          display: block;
+          color: #475569;
+          font-weight: 600;
+          background: #f8fafc;
+          text-decoration: none;
+        }
+        .tp-service-widget-tab ul li a:hover,
+        .tp-service-widget-tab ul li a.active {
+          background: #0d6efd;
+          color: #ffffff;
+          box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2);
         }
       `}</style>
       <main>
@@ -181,7 +235,7 @@ const ServiceDetails = () => {
           <div className="row">
             <div className="col-lg-4">
               <div className="tp-service-widget" style={{ position: 'sticky', top: '120px' }}>
-                <div className="tp-service-widget-item mb-40" style={{ borderRadius: '16px', border: '1px solid rgba(13, 110, 253, 0.1)' }}>
+                <div className="tp-service-widget-item mb-40">
                   <div className="tp-service-widget-tab">
                     <ul>
                       {offering_data.map((item, i) => (
@@ -200,33 +254,37 @@ const ServiceDetails = () => {
               </div>
             </div>
             <div className="col-lg-8">
-              <div className="service-details-thumb mb-40 text-center" style={{ background: 'linear-gradient(135deg, #f0f7ff 0%, #e0edff 100%)', padding: '50px', borderRadius: '20px', border: '1px solid #d1e3ff' }}>
-                <Image src={service.img} alt="theme-pure" width={200} height={200} style={{ objectFit: 'contain' }} />
+              <div className="service-details-thumb mb-50" style={{ borderRadius: '24px', overflow: 'hidden', padding: '60px 20px', boxShadow: '0 20px 50px rgba(13, 110, 253, 0.08)', position: 'relative', width: '100%', minHeight: '350px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(145deg, #ffffff 0%, #f0f7ff 100%)', border: '1px solid rgba(13, 110, 253, 0.1)' }}>
+                <Image src={service.img} alt={service.title} width={300} height={300} style={{ objectFit: 'contain', filter: 'drop-shadow(0 15px 25px rgba(0,0,0,0.1))' }} />
               </div>
-              <h2 className="tp-section-title mb-30" style={{ color: '#0d6efd', fontWeight: '700' }}>{service.title}</h2>
-              <p className="text-muted text-start" style={{ fontSize: '20px', whiteSpace: 'pre-wrap', fontWeight: '500', lineHeight: '1.6' }}>{service.description}</p>
-              <div className="mt-20 text-start" style={{ fontSize: '16px', lineHeight: '1.8' }}>
-                <p style={{ whiteSpace: 'pre-wrap', color: '#4a5568' }}>{service.content}</p>
-                {service.features && service.features.length > 0 && (
-                  <div className="mt-60">
-                    <h3 className="mb-40" style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#0d6efd', fontWeight: '600' }}>
-                      <LayoutGrid size={28} /> Key Features
-                    </h3>
-                    <div className="row">
-                      {service.features.map((feature, i) => (
-                        <div key={i} className="col-lg-6 mb-30">
-                          <div className="p-4 h-100 tp-feature-card">
-                            <div className="icon mb-3" style={{ color: '#0d6efd' }}>
-                              <CheckCircle size={32} strokeWidth={1.5} />
+              <div className="service-details-content">
+                <h2 className="tp-section-title mb-30" style={{ color: '#0f172a', fontWeight: '800', fontSize: '2.5rem', letterSpacing: '-0.5px' }}>{service.title}</h2>
+                <p className="text-muted text-start mb-40" style={{ fontSize: '1.25rem', whiteSpace: 'pre-wrap', fontWeight: '500', lineHeight: '1.8', color: '#475569' }}>{service.description}</p>
+                
+                <div className="mt-20 text-start" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+                  <p style={{ whiteSpace: 'pre-wrap', color: '#334155' }}>{service.content}</p>
+                  
+                  {service.features && service.features.length > 0 && (
+                    <div className="mt-60 pt-40" style={{ borderTop: '1px solid #e2e8f0' }}>
+                      <h3 className="mb-40" style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#0f172a', fontWeight: '700', fontSize: '2rem' }}>
+                        <LayoutGrid size={32} color="#0d6efd" /> Core Features
+                      </h3>
+                      <div className="row g-4">
+                        {service.features.map((feature, i) => (
+                          <div key={i} className="col-lg-6">
+                            <div className="p-4 h-100 tp-feature-card">
+                              <div className="icon-wrapper mb-4" style={{ width: '56px', height: '56px', borderRadius: '12px', backgroundColor: 'rgba(13, 110, 253, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0d6efd' }}>
+                                <CheckCircle size={28} strokeWidth={2} />
+                              </div>
+                              <h4 style={{ fontSize: '1.25rem', marginBottom: '12px', fontWeight: '700', color: '#1e293b' }}>{feature.title}</h4>
+                              <p style={{ fontSize: '1rem', margin: 0, whiteSpace: 'pre-wrap', color: '#64748b', lineHeight: '1.6' }}>{feature.description}</p>
                             </div>
-                            <h4 style={{ fontSize: '18px', marginBottom: '10px', fontWeight: '600', color: '#1a1a1a' }}>{feature.title}</h4>
-                            <p style={{ fontSize: '15px', margin: 0, whiteSpace: 'pre-wrap', color: '#6c757d', lineHeight: '1.6' }}>{feature.description}</p>
                           </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             </div>
           </div>
