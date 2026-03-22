@@ -13,8 +13,7 @@ const office_locations = [
     company: "SHIPSOFT SOLUTIONS PTE. LTD.",
     address: (
       <>
-        100 TRAS ST <br />
-        #16-01 <br />
+        100 TRAS ST, #16-01 <br />
         SINGAPORE 079027
       </>
     ),
@@ -93,7 +92,6 @@ const FooterTwo = () => {
         <div className="container container-large">
           <div className="footer-main">
             <div className="row gy-5 align-items-start">
-              {/* Left */}
               <div className="col-xl-4 col-lg-4 col-md-12">
                 <div className="footer-brand-col">
                   <div className="footer-logo-wrap">
@@ -124,7 +122,6 @@ const FooterTwo = () => {
                 </div>
               </div>
 
-              {/* Middle */}
               <div className="col-xl-3 col-lg-3 col-md-5">
                 <div className="footer-links-col">
                   <h3 className="footer-title">Quick Links</h3>
@@ -141,7 +138,6 @@ const FooterTwo = () => {
                 </div>
               </div>
 
-              {/* Right */}
               <div className="col-xl-5 col-lg-5 col-md-7">
                 <div className="footer-office-col">
                   <div className="footer-title-row">
@@ -173,7 +169,7 @@ const FooterTwo = () => {
                         href={currentOffice.map}
                         target="_blank"
                         rel="noreferrer"
-                        className="office-item"
+                        className="office-item office-address-item"
                       >
                         <div className="icon-box">
                           <i className="fa-sharp fa-light fa-location-dot"></i>
@@ -281,7 +277,7 @@ const FooterTwo = () => {
 
           .footer-desc {
             font-size: 18px;
-            line-height: 1.9;
+            line-height: 1.8;
             color: #5d6677;
             max-width: 390px;
             margin-bottom: 30px;
@@ -336,7 +332,7 @@ const FooterTwo = () => {
             height: 42px;
             border-radius: 12px;
             background: #ffffff;
-            border: 1px solid #e5e7eb;
+            border: 1px solid #d7dee8;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -361,16 +357,16 @@ const FooterTwo = () => {
             align-items: center;
             justify-content: space-between;
             gap: 20px;
-            margin-bottom: 24px;
+            margin-bottom: 18px;
           }
 
           .footer-title {
-            margin: 0 0 24px;
-            font-size: 42px;
-            line-height: 1.1;
-            font-weight: 800;
+            margin: 0 0 18px;
+            font-size: 28px;
+            line-height: 1.2;
+            font-weight: 700;
             color: #0f172a;
-            letter-spacing: -0.03em;
+            letter-spacing: -0.2px;
           }
 
           .footer-title-row .footer-title {
@@ -444,11 +440,11 @@ const FooterTwo = () => {
 
           .office-card {
             position: relative;
-            border-radius: 30px;
+            border-radius: 28px;
             background: linear-gradient(145deg, #ffffff, #f7fbff);
             border: 1px solid rgba(13, 110, 253, 0.15);
             box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
-            padding: 34px;
+            padding: 24px;
             overflow: hidden;
           }
 
@@ -492,8 +488,8 @@ const FooterTwo = () => {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 16px;
-            margin-bottom: 22px;
+            gap: 14px;
+            margin-bottom: 14px;
             flex-wrap: wrap;
           }
 
@@ -516,18 +512,17 @@ const FooterTwo = () => {
           }
 
           .office-country {
-            font-size: 16px;
-            font-weight: 700;
-            color: #1e293b;
+            font-size: 14px;
+            color: #6b7280;
+            font-weight: 600;
           }
 
           .office-company {
-            font-size: 34px;
-            line-height: 1.2;
-            font-weight: 800;
+            font-size: 22px;
+            line-height: 1.3;
+            font-weight: 700;
             color: #111827;
-            margin-bottom: 22px;
-            max-width: 90%;
+            margin-bottom: 14px;
           }
 
           .office-divider {
@@ -538,66 +533,71 @@ const FooterTwo = () => {
               rgba(13, 110, 253, 0.22),
               rgba(13, 110, 253, 0)
             );
-            margin-bottom: 24px;
+            margin-bottom: 18px;
           }
 
           .office-item {
             display: flex;
             align-items: flex-start;
-            gap: 16px;
+            gap: 12px;
             text-decoration: none;
             color: #5a6474;
             transition: all 0.3s ease;
+            margin-bottom: 14px;
           }
 
           .office-item:hover {
             color: #0d6efd;
           }
 
-          .office-item + .office-item {
-            margin-top: 18px;
+          .office-address-item {
+            background: #f8fbff;
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid #e6edf6;
           }
 
           .icon-box {
-            width: 44px;
-            height: 44px;
-            min-width: 44px;
-            border-radius: 14px;
+            width: 36px;
+            height: 36px;
+            min-width: 36px;
+            border-radius: 10px;
             background: #ffffff;
             border: 1px solid #e6eefb;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
           }
 
           .icon-box i {
             color: #0d6efd;
-            font-size: 17px;
+            font-size: 14px;
           }
 
           .office-text {
-            font-size: 18px;
-            line-height: 1.9;
+            font-size: 15px;
+            line-height: 1.6;
             color: inherit;
           }
 
           .office-contact-row {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 18px;
-            margin-top: 22px;
+            gap: 2px;
+            margin-top: 8px;
           }
 
           .small-item {
             padding: 0;
+            margin-bottom: 12px;
           }
 
           .office-dots {
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-top: 22px;
+            margin-top: 20px;
             padding-left: 8px;
           }
 
@@ -623,6 +623,7 @@ const FooterTwo = () => {
             z-index: 2;
             padding: 24px 0 28px;
             border-top: 1px solid #e7edf5;
+            margin-top: 24px;
           }
 
           .copyright-text {
@@ -653,7 +654,7 @@ const FooterTwo = () => {
           @keyframes officeFade {
             0% {
               opacity: 0;
-              transform: translateY(18px);
+              transform: translateY(14px);
             }
             100% {
               opacity: 1;
@@ -662,13 +663,8 @@ const FooterTwo = () => {
           }
 
           @media (max-width: 1199px) {
-            .footer-title {
-              font-size: 34px;
-            }
-
             .office-company {
-              font-size: 28px;
-              max-width: 100%;
+              font-size: 20px;
             }
           }
 
@@ -678,15 +674,7 @@ const FooterTwo = () => {
             }
 
             .footer-title {
-              font-size: 30px;
-            }
-
-            .office-card {
-              padding: 26px;
-            }
-
-            .office-company {
-              font-size: 24px;
+              font-size: 26px;
             }
 
             .footer-bottom-links {
@@ -697,30 +685,20 @@ const FooterTwo = () => {
           @media (max-width: 767px) {
             .footer-desc {
               font-size: 16px;
-              line-height: 1.8;
-            }
-
-            .footer-title {
-              font-size: 28px;
-            }
-
-            .office-company {
-              font-size: 22px;
-            }
-
-            .office-text {
-              font-size: 16px;
               line-height: 1.75;
             }
 
-            .office-item {
-              gap: 12px;
+            .footer-title {
+              font-size: 24px;
             }
 
-            .icon-box {
-              width: 40px;
-              height: 40px;
-              min-width: 40px;
+            .office-company {
+              font-size: 20px;
+            }
+
+            .office-text {
+              font-size: 14px;
+              line-height: 1.6;
             }
 
             .footer-social-links :global(a) {
