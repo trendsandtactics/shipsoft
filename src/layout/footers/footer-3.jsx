@@ -115,7 +115,6 @@ const FooterThree = ({ hideExtras }) => {
                             </div>
                             </>
                         )}
-                            </div>
                         </div>
                     </div>
 
