@@ -62,9 +62,6 @@ const Features = () => {
                         <div className="row">
                             {/* Architecture & Technology */}
                             <div className="col-lg-6 col-md-6 mb-40">
-                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
-                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Architecture & Technology</h4>
-                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>Shipsoft uses the PHP Laravel Web Application Stack and Oracle as its data store – One of the most widely used Relational Database Management System (RDBMS). Shipsoft leverages a robust three-tier Architecture, comprising of the UI, Web and Data Tier – ensuring scalability, maintainability, and performance. Designed for accessibility and convenience, Shipsoft can be accessed seamlessly through web browsers and smartphones, enabling users to manage operations anytime, anywhere.</p>
                                 <div className="feature-card">
                                     <h4 className="feature-title">Architecture & Technology</h4>
                                     <p className="feature-desc">Shipsoft uses the PHP Laravel Web Application Stack and Oracle as its data store – One of the most widely used Relational Database Management System (RDBMS). Shipsoft leverages a robust three-tier Architecture, comprising of the UI, Web and Data Tier – ensuring scalability, maintainability, and performance. Designed for accessibility and convenience, Shipsoft can be accessed seamlessly through web browsers and smartphones, enabling users to manage operations anytime, anywhere.</p>
@@ -73,9 +70,6 @@ const Features = () => {
 
                             {/* Cloud Application */}
                             <div className="col-lg-6 col-md-6 mb-40">
-                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
-                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Cloud Application</h4>
-                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>Shipsoft Solutions offers an on-demand, web-based model that significantly reduces the need for heavy IT infrastructure. By handling key aspects such as maintenance, upgrades, data security, performance, support, and business continuity, we allow users to focus on their core operations. Our cost-effective, pay-per-use subscription model further lowers the total cost of ownership, making advanced logistics management both accessible and affordable for businesses of all sizes.</p>
                                 <div className="feature-card">
                                     <h4 className="feature-title">Cloud Application</h4>
                                     <p className="feature-desc">Shipsoft Solutions offers an on-demand, web-based model that significantly reduces the need for heavy IT infrastructure. By handling key aspects such as maintenance, upgrades, data security, performance, support, and business continuity, we allow users to focus on their core operations. Our cost-effective, pay-per-use subscription model further lowers the total cost of ownership, making advanced logistics management both accessible and affordable for businesses of all sizes.</p>
@@ -84,9 +78,6 @@ const Features = () => {
 
                             {/* Modular Architecture */}
                             <div className="col-lg-6 col-md-6 mb-40">
-                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
-                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Modular Architecture</h4>
-                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>Shipsoft Solutions features a modular design that enables businesses to select only the functionalities they need, tailored to their specific operational requirements. As their needs evolve, customers can easily integrate additional modules without disrupting existing workflows. The system is fully scalable and extensible, designed to grow with your business and adapt to the ever-changing demands of the logistics and supply chain industry.</p>
                                 <div className="feature-card">
                                     <h4 className="feature-title">Modular Architecture</h4>
                                     <p className="feature-desc">Shipsoft Solutions features a modular design that enables businesses to select only the functionalities they need, tailored to their specific operational requirements. As their needs evolve, customers can easily integrate additional modules without disrupting existing workflows. The system is fully scalable and extensible, designed to grow with your business and adapt to the ever-changing demands of the logistics and supply chain industry.</p>
@@ -95,9 +86,6 @@ const Features = () => {
 
                             {/* Scalable & Extensible */}
                             <div className="col-lg-6 col-md-6 mb-40">
-                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
-                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Scalable & Extensible</h4>
-                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>Shipsoft is built on a highly scalable and extensible architecture, designed to grow with your organization. Its flexible framework allows the system to evolve and adapt to shifting industry demands with minimal disruption to existing functionalities, ensuring long-term reliability and smooth transitions as your business requirements change.</p>
                                 <div className="feature-card">
                                     <h4 className="feature-title">Scalable & Extensible</h4>
                                     <p className="feature-desc">Shipsoft is built on a highly scalable and extensible architecture, designed to grow with your organization. Its flexible framework allows the system to evolve and adapt to shifting industry demands with minimal disruption to existing functionalities, ensuring long-term reliability and smooth transitions as your business requirements change.</p>
@@ -106,9 +94,6 @@ const Features = () => {
 
                             {/* Document Management */}
                             <div className="col-lg-6 col-md-6 mb-40">
-                                <div className="tp-feature-item p-4" style={{ background: '#f8f9fa', border: '1px solid #eaeaea', borderRadius: '10px', height: '100%' }}>
-                                    <h4 className="mb-20" style={{ fontSize: '22px', fontWeight: '600' }}>Document Management</h4>
-                                    <p style={{ color: '#555', lineHeight: '1.7', margin: 0 }}>Efficient workflow relies on the ability to store and manage documents in digital form. Shipsoft allows users to scan, categorize, and securely store critical documents, such as quotations, invoices, and other essential records, directly against their corresponding shipment or client profile. This module is designed to support the full shipment lifecycle, from initial booking through to final payment settlement, ensuring streamlined operations and easy access to important information</p>
                                 <div className="feature-card">
                                     <h4 className="feature-title">Document Management</h4>
                                     <p className="feature-desc">Efficient workflow relies on the ability to store and manage documents in digital form. Shipsoft allows users to scan, categorize, and securely store critical documents, such as quotations, invoices, and other essential records, directly against their corresponding shipment or client profile. This module is designed to support the full shipment lifecycle, from initial booking through to final payment settlement, ensuring streamlined operations and easy access to important information</p>
@@ -121,7 +106,7 @@ const Features = () => {
                                     <h4 className="feature-title">Customer Services</h4>
                                     <p className="feature-desc">The software transforms supply chain management by providing partners with real-time access to critical information such as inventory levels, order status, and shipment tracking. This multi-channel accessibility fosters seamless communication and collaboration, enabling partners to interact with the company efficiently and stay informed throughout the entire process.</p>
                                 </div>
-                        </div>
+                            </div>
                     </div>
                 </section>
             </main>
