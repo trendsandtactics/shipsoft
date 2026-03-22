@@ -11,7 +11,7 @@ import { CheckCircle, ChevronRight, LayoutGrid } from 'lucide-react';
 const updated_services_content = [
   {
     match: "Customer Relationship Management",
-    img: "/assets/img/service/crm.png",
+    img: "/crm.png",
     description: `Our CRM module is purpose-built to help businesses drive profitability by streamlining customer interactions and internal workflows. With a focus on improving efficiency, personalization, and data-driven decision-making, this powerful tool supports every stage of the customer lifecycle.`,
     content: `By consolidating all customer-related data and interactions in one centralized system, the CRM module empowers your team to better understand and serve your clients. It strengthens customer engagement, boosts retention, and supports long-term business growth through smarter, more strategic relationship management.\n\nEmpower yourself to manage all your company’s relationships with customers and potential customers through technology.`,
     features: [
@@ -30,7 +30,7 @@ const updated_services_content = [
   },
   {
     match: "Freight Management",
-    img: "/assets/img/service/freight.png",
+    img: "/freight.png",
     description: `Shipsoft Solutions is a leading logistics technology provider, delivering innovative freight management software built to simplify and optimize freight forwarding. Designed with logistics professionals in mind, our user-friendly platform replaces manual processes with automated workflows—enhancing accuracy, speed, and overall efficiency.\n\nShipsoft empowers freight forwarders to digitize their operations, improve productivity, and reduce delays and errors. Its flexible architecture supports seamless integration with partners, vendors, and customers, enabling real-time collaboration and communication across the global supply chain.`,
     content: `With real-time access to data and shipment status, businesses gain agility, transparency, and control—allowing them to respond faster to market changes and customer needs. More than just software, Shipsoft Solutions is a strategic partner in building a smarter, more connected, and future-ready logistics ecosystem.\n\nThis connectivity ensures that all stakeholders are synchronized, facilitating smooth communication and collaboration. Consequently, freight forwarders can conduct their business from anywhere, enhancing their ability to respond swiftly to market changes and customer demands. This capability not only strengthens business relationships but also enhances customer satisfaction by providing real-time updates and transparency throughout the shipping process. In essence, Shipsoft Solutions has not only equipped freight forwarders with the tools to thrive in a digital age but has also set a new standard for efficiency and connectivity in the logistics sector, paving the way for a more integrated and responsive supply chain ecosystem.\n\nA comprehensive freight management system which provide total control and visibility of shipments at all times to customers.`,
     features: [
@@ -59,7 +59,7 @@ const updated_services_content = [
   },
   {
     match: "Warehouse Management",
-    img: "/assets/img/service/warehouse.png",
+    img: "/warehouse.png",
     description: `Shipsoft’s WMS is a robust, customizable solution that delivers full visibility and control over your warehouse operations. Designed to streamline processes from receiving to shipping, it helps businesses boost efficiency, accuracy, and productivity.`,
     content: `Shipsoft’s WMS is more than an inventory tool—it’s an integrated solution that enhances every aspect of warehouse management. With real-time visibility, process optimization, and smart integration, it empowers businesses to reduce costs, increase efficiency, and stay ahead in a competitive market.\n\nOur WMS is capable of interface with clients and suppliers which helps to streamline processes and improve productivity and save time and money.\n\nIn today’s dynamic economy, connected consumers wants flexibility and visibility ever changing environment. Businesses need the ability to respond quickly to customers request based on live information available from our software/portal. Our cloud-based warehouse management system prepares you for tomorrow’s supply chain, today.`,
     features: [
@@ -90,7 +90,7 @@ const updated_services_content = [
   },
   {
     match: "Transport Management",
-    img: "/assets/img/service/transport.png",
+    img: "/transport.png",
     description: `Shipsoft’s Transport Management System (TMS) is a vital solution for modern logistics, designed to plan, execute, and monitor the movement of goods with maximum efficiency. Using advanced algorithms and real-time data, the system optimizes routing, consolidates shipments, and manages carriers—reducing costs while improving delivery speed and reliability.`,
     content: `With seamless integration into existing logistics and enterprise systems, Shipsoft’s TMS ensures smooth data exchange across the supply chain. This empowers stakeholders with real-time insights and enables faster, more informed decision-making.\n\nMoreover, the Transport Management System enhances visibility and control over the entire transportation process. Companies can monitor shipments in real-time, track performance metrics, and generate detailed reports on various aspects of their transportation operations. This level of insight allows businesses to identify inefficiencies, mitigate risks, and continuously improve their logistics strategies. Additionally, a robust transport management system supports compliance with regulatory requirements and industry standards, ensuring that all transportation activities are conducted legally and ethically. In essence, a TMS is not just a tool for managing transportation; it is a strategic asset that drives operational excellence, cost savings, and customer satisfaction in the logistics industry.\n\nThe module is designed to meet all the requirements for processing shipments.`,
     features: [
@@ -104,7 +104,7 @@ const updated_services_content = [
   },
   {
     match: "Accounts Management",
-    img: "/assets/img/service/account.png",
+    img: "/account.png",
     description: `An Accounts Management System (AMS) is a critical tool for ensuring the financial stability, accuracy, and transparency of any organization. It streamlines and automates core accounting functions—such as general ledger, accounts payable and receivable, and financial reporting—providing real-time insights into the company’s financial health. By automating routine tasks like invoice processing, account reconciliation, and report generation, the AMS reduces errors and allows finance teams to focus on strategic planning and analysis.`,
     content: `The system enhances decision-making by delivering accurate, timely financial data to stakeholders, while also supporting regulatory compliance through detailed record-keeping and audit trails. It enables businesses to monitor cash flow, track transactions, and enforce financial controls with ease. With a centralized platform, the AMS promotes better collaboration across departments and ensures standardized financial processes throughout the organization.\n\nModern accounts management software also features intuitive, user-friendly interfaces and customizable dashboards, allowing businesses to tailor financial reports to their specific needs. This adaptability makes it easier to manage complex financial operations while maintaining full control and visibility.\n\nIn essence, an AMS is more than just an accounting tool—it’s a strategic asset that supports efficient financial management, strengthens compliance, and drives sustainable growth in a competitive business environment.\n\nDesigned to serve dealers and agencies, provides a single platform for suppliers, agencies, and customers, features automatic email alerts and notifications, along with email-based approvals.`,
     features: [
@@ -121,7 +121,7 @@ const updated_services_content = [
   },
   {
     match: "Distribution Management",
-    img: "/assets/img/service/distribute.png",
+    img: "/distribute.png",
     description: `A Distribution Management System (DMS) is essential for streamlining the movement of goods from manufacturers to customers. By integrating with warehouse and transport management systems, it ensures seamless coordination across the supply chain. With real-time inventory visibility, businesses can maintain optimal stock levels, reduce holding costs, and avoid shortages or overstocking.`,
     content: `The DMS automates order processing, picking, packing, and shipping—minimizing errors and speeding up deliveries. This leads to improved accuracy, faster fulfilment, and greater customer satisfaction. It also offers robust tracking and reporting tools, enabling data-driven decisions that enhance efficiency and reduce costs.\n\nIn today’s competitive market, a DMS is more than a logistics tool—it’s a strategic solution that empowers businesses to adapt, scale, and deliver superior service.\n\nDesigned to serve dealers and agencies, provides a single platform for suppliers, agencies, and customers, features automatic email alerts and notifications, along with email-based approvals.`,
     features: [
@@ -138,7 +138,7 @@ const updated_services_content = [
   },
   {
     match: "E-Commerce",
-    img: "/assets/img/service/E-commerec.png",
+    img: "/E-commerec.png",
     description: `Complete e-commerce logistics solutions designed to handle the high-volume, fast-paced demands of online retail.`,
     content: `Our E-commerce fulfillment module helps you seamlessly connect your online store with warehouse and shipping operations, ensuring quick and accurate order processing.\n\nAutomate inventory updates, tracking, and customer notifications, ensuring that your customers get the best possible experience when purchasing from you.`,
     features: [
