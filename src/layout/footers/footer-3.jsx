@@ -110,6 +110,7 @@ const FooterThree = ({ hideExtras }) => {
                                     <SocialLinks /> 
 
                                 </div>
+                                </div>
                             </div>
                             </div>
                             </>
