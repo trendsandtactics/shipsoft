@@ -76,16 +76,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </section>
-                <style jsx>{`
-                    .address-scroll-wrapper { width: 100%; overflow: hidden; white-space: nowrap; position: relative; padding: 20px 0; }
-                    .address-scroll-track { display: inline-flex; gap: 30px; animation: scroll-addresses 20s linear infinite; }
-                    .address-scroll-track:hover { animation-play-state: paused; }
-                    @keyframes scroll-addresses { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-                    .address-card { min-width: 350px; white-space: normal; background: #f8fafc; padding: 25px 30px; border-radius: 12px; border: 1px solid #e2e8f0; display: flex; align-items: flex-start; gap: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
-                    .address-info h4 { margin-top: 0; margin-bottom: 10px; font-size: 1.25rem; color: #0f172a; font-weight: 700; }
-                    .address-info p { margin: 0; color: #475569; line-height: 1.6; }
-                    .flag-wrapper { flex-shrink: 0; margin-top: 2px; }
-                `}</style>
+
             </main>
             <FooterThree hideExtras={true} />
         </>
