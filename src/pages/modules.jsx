@@ -5,7 +5,7 @@ import Header from '../layout/headers/header';
 import OfferingArea from '../components/homes/home-2/offer-area';
 import Breadcrumb from '../common/breadcrumb/breadcrumb';
 import FooterContact from '../layout/footers/footer-contact';
-import FooterThree from '../layout/footers/footer-3';
+import FooterThree from '../layout/footers/footer-2';
 
 const Modules = () => {
     return (
