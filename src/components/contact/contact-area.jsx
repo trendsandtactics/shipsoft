@@ -14,55 +14,160 @@ const ContactArea = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className="row justify-content-center">
                         <div className="col-lg-4 col-md-6">
-                            <div className="tp-contact-info-box mb-30 text-center" style={{height: '100%', padding: '40px 20px', border: '1px solid #eaeaea', borderRadius: '10px'}}>
+                            <div
+                                className="tp-contact-info-box mb-30 text-center"
+                                style={{
+                                    height: '100%',
+                                    padding: '40px 20px',
+                                    border: '1px solid #eaeaea',
+                                    borderRadius: '10px'
+                                }}
+                            >
                                 <div className="tp-contact-info-icon mb-20">
-                                   <span style={{fontSize: '30px'}}>🇸🇬</span>
+                                    <img
+                                        src="/singapore.webp"
+                                        alt="Singapore"
+                                        style={{
+                                            width: '40px',
+                                            height: '40px',
+                                            objectFit: 'cover',
+                                            borderRadius: '50%'
+                                        }}
+                                    />
                                 </div>
-                                <h4 className="tp-contact-info-title" style={{fontSize: '20px', marginBottom: '15px'}}>Singapore</h4>
+                                <h4
+                                    className="tp-contact-info-title"
+                                    style={{ fontSize: '20px', marginBottom: '15px' }}
+                                >
+                                    Singapore
+                                </h4>
                                 <div className="tp-contact-info-content">
-                                    <p style={{marginBottom: '5px'}}><strong>SHIPSOFT SOLUTIONS PTE. LTD.</strong></p>
-                                    <p>100 TRAS ST<br/>#16-01<br/>SINGAPORE 079027.</p>
-                                    <p className="mt-15"><a href="mailto:sales@shipsoft.co">sales@shipsoft.co</a></p>
-                                    <p><a href="tel:+6586065455">+65 86065455</a></p>
+                                    <p style={{ marginBottom: '5px' }}>
+                                        <strong>SHIPSOFT SOLUTIONS PTE. LTD.</strong>
+                                    </p>
+                                    <p>
+                                        100 TRAS ST
+                                        <br />
+                                        #16-01
+                                        <br />
+                                        SINGAPORE 079027.
+                                    </p>
+                                    <p className="mt-15">
+                                        <a href="mailto:sales@shipsoft.co">sales@shipsoft.co</a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+6586065455">+65 86065455</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
-                            <div className="tp-contact-info-box mb-30 text-center" style={{height: '100%', padding: '40px 20px', border: '1px solid #eaeaea', borderRadius: '10px'}}>
+                            <div
+                                className="tp-contact-info-box mb-30 text-center"
+                                style={{
+                                    height: '100%',
+                                    padding: '40px 20px',
+                                    border: '1px solid #eaeaea',
+                                    borderRadius: '10px'
+                                }}
+                            >
                                 <div className="tp-contact-info-icon mb-20">
-                                    <span style={{fontSize: '30px'}}>🇦🇪</span>
+                                    <img
+                                        src="/united-arab-emirates.webp"
+                                        alt="UAE"
+                                        style={{
+                                            width: '40px',
+                                            height: '40px',
+                                            objectFit: 'cover',
+                                            borderRadius: '50%'
+                                        }}
+                                    />
                                 </div>
-                                <h4 className="tp-contact-info-title" style={{fontSize: '20px', marginBottom: '15px'}}>UAE</h4>
+                                <h4
+                                    className="tp-contact-info-title"
+                                    style={{ fontSize: '20px', marginBottom: '15px' }}
+                                >
+                                    UAE
+                                </h4>
                                 <div className="tp-contact-info-content">
-                                    <p style={{marginBottom: '5px'}}><strong>SHIPSOFT SOLUTIONS FZE</strong></p>
-                                    <p>SM- OFFICE- E1-1613B<br/>AJMAN FREE ZONE<br/>UNITED ARAB EMIRATES</p>
-                                    <p className="mt-15"><a href="mailto:sales@shipsoft.co">sales@shipsoft.co</a></p>
-                                    <p><a href="tel:+97143704077">+971 43 704077</a></p>
+                                    <p style={{ marginBottom: '5px' }}>
+                                        <strong>SHIPSOFT SOLUTIONS FZE</strong>
+                                    </p>
+                                    <p>
+                                        SM- OFFICE- E1-1613B
+                                        <br />
+                                        AJMAN FREE ZONE
+                                        <br />
+                                        UNITED ARAB EMIRATES
+                                    </p>
+                                    <p className="mt-15">
+                                        <a href="mailto:sales@shipsoft.co">sales@shipsoft.co</a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+97143704077">+971 43 704077</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6">
-                            <div className="tp-contact-info-box mb-30 text-center" style={{height: '100%', padding: '40px 20px', border: '1px solid #eaeaea', borderRadius: '10px'}}>
+                            <div
+                                className="tp-contact-info-box mb-30 text-center"
+                                style={{
+                                    height: '100%',
+                                    padding: '40px 20px',
+                                    border: '1px solid #eaeaea',
+                                    borderRadius: '10px'
+                                }}
+                            >
                                 <div className="tp-contact-info-icon mb-20">
-                                    <span style={{fontSize: '30px'}}>🇸🇦</span>
+                                    <img
+                                        src="/saudi-arabia.webp"
+                                        alt="Saudi Arabia"
+                                        style={{
+                                            width: '40px',
+                                            height: '40px',
+                                            objectFit: 'cover',
+                                            borderRadius: '50%'
+                                        }}
+                                    />
                                 </div>
-                                <h4 className="tp-contact-info-title" style={{fontSize: '20px', marginBottom: '15px'}}>Saudi Arabia</h4>
+                                <h4
+                                    className="tp-contact-info-title"
+                                    style={{ fontSize: '20px', marginBottom: '15px' }}
+                                >
+                                    Saudi Arabia
+                                </h4>
                                 <div className="tp-contact-info-content">
-                                    <p style={{marginBottom: '5px'}}><strong>ShipSoft Company</strong></p>
-                                    <p>Room-302, 3rd Floor, 4073,<br/>Prince Mohammed Bin Fahd Road<br/>Al Mazruiyah Dist., Pin Code 32415-7135,<br/>Kingdom of Saudi Arabia.</p>
-                                    <p className="mt-15"><a href="mailto:sales@shipsoft.co">sales@shipsoft.co</a></p>
-                                    <p><a href="tel:+966566492783">+966 566492783</a></p>
+                                    <p style={{ marginBottom: '5px' }}>
+                                        <strong>ShipSoft Company</strong>
+                                    </p>
+                                    <p>
+                                        Room-302, 3rd Floor, 4073,
+                                        <br />
+                                        Prince Mohammed Bin Fahd Road
+                                        <br />
+                                        Al Mazruiyah Dist., Pin Code 32415-7135,
+                                        <br />
+                                        Kingdom of Saudi Arabia.
+                                    </p>
+                                    <p className="mt-15">
+                                        <a href="mailto:sales@shipsoft.co">sales@shipsoft.co</a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+966566492783">+966 566492783</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className="row mt-50">
-                         <div className="col-lg-12">
+                        <div className="col-lg-12">
                             <div className="tp-contact-form">
                                 <form action="#">
                                     <div className="row">
@@ -92,12 +197,14 @@ const ContactArea = () => {
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
-                                            <button type="submit" className="tp-btn">Send Message</button>
+                                            <button type="submit" className="tp-btn">
+                                                Send Message
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                         </div>
+                        </div>
                     </div>
                 </div>
             </section>
