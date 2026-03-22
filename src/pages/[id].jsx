@@ -2,11 +2,11 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Header from '@/src/layout/headers/header';
-import Breadcrumb from '@/src/common/breadcrumb/breadcrumb';
 import Link from 'next/link';
 import FooterContact from '@/src/layout/footers/footer-contact';
 import FooterThree from '@/src/layout/footers/footer-3';
 import { offering_data } from '@/src/data/offering-data';
+import { CheckCircle, ChevronRight, LayoutGrid } from 'lucide-react';
 
 const updated_services_content = [
   {
@@ -162,20 +162,35 @@ const ServiceDetails = () => {
   return (
     <>
       <Header />
+      <style jsx>{`
+        .tp-feature-card {
+          background-color: #ffffff;
+          border-radius: 12px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+          transition: all 0.3s ease;
+          border: 1px solid rgba(0,0,0,0.03);
+        }
+        .tp-feature-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 35px rgba(13, 110, 253, 0.15);
+          border-color: rgba(13, 110, 253, 0.2);
+        }
+      `}</style>
       <main>
-        <Breadcrumb top_title="Service Details" page_title="Service Details" />
-        
         <div className="container pt-120 pb-120">
           <div className="row">
             <div className="col-lg-4">
-              <div className="tp-service-widget">
-                <div className="tp-service-widget-item mb-40">
+              <div className="tp-service-widget" style={{ position: 'sticky', top: '120px' }}>
+                <div className="tp-service-widget-item mb-40" style={{ borderRadius: '16px', border: '1px solid rgba(13, 110, 253, 0.1)' }}>
                   <div className="tp-service-widget-tab">
                     <ul>
                       {offering_data.map((item, i) => (
                         <li key={i}>
                           <Link className={item.slug === id ? "active" : ""} href={`/${item.slug}`}>
-                            {item.title} <i className="fa-regular fa-arrow-right-long"></i>
+                            <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                              <span>{item.title}</span>
+                              <ChevronRight size={18} strokeWidth={2.5} />
+                            </span>
                           </Link>
                         </li>
                       ))}
@@ -184,23 +199,28 @@ const ServiceDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-8 text-center">
-              <div className="service-details-thumb mb-40">
+            <div className="col-lg-8">
+              <div className="service-details-thumb mb-40 text-center" style={{ background: 'linear-gradient(135deg, #f0f7ff 0%, #e0edff 100%)', padding: '50px', borderRadius: '20px', border: '1px solid #d1e3ff' }}>
                 <Image src={service.img} alt="theme-pure" width={200} height={200} style={{ objectFit: 'contain' }} />
               </div>
-              <h2 className="tp-section-title mb-30">{service.title}</h2>
-              <p className="text-muted" style={{ fontSize: '18px', whiteSpace: 'pre-wrap' }}>{service.description}</p>
+              <h2 className="tp-section-title mb-30" style={{ color: '#0d6efd', fontWeight: '700' }}>{service.title}</h2>
+              <p className="text-muted text-start" style={{ fontSize: '20px', whiteSpace: 'pre-wrap', fontWeight: '500', lineHeight: '1.6' }}>{service.description}</p>
               <div className="mt-20 text-start" style={{ fontSize: '16px', lineHeight: '1.8' }}>
-                <p style={{ whiteSpace: 'pre-wrap' }}>{service.content}</p>
+                <p style={{ whiteSpace: 'pre-wrap', color: '#4a5568' }}>{service.content}</p>
                 {service.features && service.features.length > 0 && (
-                  <div className="mt-50">
-                    <h3 className="mb-30">Key Features</h3>
+                  <div className="mt-60">
+                    <h3 className="mb-40" style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#0d6efd', fontWeight: '600' }}>
+                      <LayoutGrid size={28} /> Key Features
+                    </h3>
                     <div className="row">
                       {service.features.map((feature, i) => (
                         <div key={i} className="col-lg-6 mb-30">
-                          <div className="p-4 h-100" style={{ backgroundColor: '#f8f9fa', borderRadius: '8px' }}>
-                            <h4 style={{ fontSize: '18px', marginBottom: '10px' }}>{feature.title}</h4>
-                            <p style={{ fontSize: '15px', margin: 0, whiteSpace: 'pre-wrap', color: '#6c757d' }}>{feature.description}</p>
+                          <div className="p-4 h-100 tp-feature-card">
+                            <div className="icon mb-3" style={{ color: '#0d6efd' }}>
+                              <CheckCircle size={32} strokeWidth={1.5} />
+                            </div>
+                            <h4 style={{ fontSize: '18px', marginBottom: '10px', fontWeight: '600', color: '#1a1a1a' }}>{feature.title}</h4>
+                            <p style={{ fontSize: '15px', margin: 0, whiteSpace: 'pre-wrap', color: '#6c757d', lineHeight: '1.6' }}>{feature.description}</p>
                           </div>
                         </div>
                       ))}
