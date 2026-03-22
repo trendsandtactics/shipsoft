@@ -34,13 +34,13 @@ const HeaderOne = () => {
                         <div className="col-xl-8">
                            <div className="tp-header-2-top-right d-flex justify-content-end align-items-center">
                               <div className="header-location">
-                                 <a href="tel:+6586065455"><span style={{fontSize: '20px', marginRight: '5px'}}>🇸🇬</span> +65 86065455</a>
+                                 <a href="tel:+6586065455"><Image src="/singapore.webp" alt="Singapore" width={24} height={16} style={{marginRight: '6px', objectFit: 'cover', borderRadius: '2px'}} /> +65 86065455</a>
                               </div>
                               <div className="header-location">
-                                 <a href="tel:+97143704077"><span style={{fontSize: '20px', marginRight: '5px'}}>🇦🇪</span> +971 43 704077</a>
+                                 <a href="tel:+97143704077"><Image src="/united-arab-emirates.webp" alt="UAE" width={24} height={16} style={{marginRight: '6px', objectFit: 'cover', borderRadius: '2px'}} /> +971 43 704077</a>
                               </div>
                               <div className="header-location">
-                                 <a href="tel:+966566492783"><span style={{fontSize: '20px', marginRight: '5px'}}>🇸🇦</span> +966 566492783</a>
+                                 <a href="tel:+966566492783"><Image src="/saudi-arabia.webp" alt="Saudi Arabia" width={24} height={16} style={{marginRight: '6px', objectFit: 'cover', borderRadius: '2px'}} /> +966 566492783</a>
                               </div>
                               <div className="header-social d-xxl-block d-none">
                                  <a href="https://www.facebook.com/shipsoft.co"><i className="fa-brands fa-facebook-f"></i></a>

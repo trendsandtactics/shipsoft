@@ -29,11 +29,11 @@ const footer_content = {
 }
 const {contact_us, mail, contact_text, phone, info, map, address, mail_2, mail_phone, service_links} = footer_content
 
-const FooterThree = () => {
+const FooterThree = ({ hideExtras }) => {
     return (
         <>
-            <footer className="tp-footer-area p-relative">
-                <div className="tp-footer-bg" style={{backgroundImage: `url(/assets/img/footer/footer-bg.jpg)`}}></div>
+            <footer className="tp-footer-area p-relative" style={{ backgroundColor: '#ffffff' }}>
+                <div className="tp-footer-bg" style={{ backgroundColor: '#ffffff' }}></div>
                 <div className="tp-footer-top-shape" style={{backgroundImage: `url(/assets/img/footer/footer-top-bg.png)`}}></div>
                 
                 <div className="container container-large">
@@ -73,6 +73,8 @@ const FooterThree = () => {
                                 </div>
                                 </div> 
                             </div>
+                        {!hideExtras && (
+                            <>
                             <div className="col-xl-3 col-lg-4 col-md-6">
                                 <div className="tp-footer-widget tp-footer-col-3">
                                 <h3 className="tp-footer-widget-title">Contact Info</h3>
@@ -110,6 +112,8 @@ const FooterThree = () => {
                                 </div>
                             </div>
                             </div>
+                            </>
+                        )}
                             </div>
                         </div>
                     </div>
