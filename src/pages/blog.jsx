@@ -11,7 +11,7 @@ import { blogs } from '../data/blog-content';
 const Blog = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={"Blog"} />
+      <SEO pageTitle={"ShipSoft - Blog"} />
       <Header />
       <style jsx>{`
           .blog-card {
