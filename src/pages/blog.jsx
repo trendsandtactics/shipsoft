@@ -5,7 +5,6 @@ import Header from "../layout/headers/header";
 import FooterContact from "../layout/footers/footer-contact";
 import FooterThree from "../layout/footers/footer-2";
 import Link from 'next/link';
-import BlogArea from "./blog-area";
 import { blogs } from '../data/blog-content';
 
 const Blog = () => {
@@ -79,10 +78,28 @@ const Blog = () => {
                   </div>
               </div>
           </section>
-        
-         
+          <section className="tp-blog-area pt-100 pb-80" style={{ backgroundColor: '#f8fafc' }}>
+              <div className="container">
+                  <div className="row">
+                      {blogs.map((blog, i) => (
+                          <div key={i} className="col-lg-6 col-md-6 mb-40">
+                              <div className="blog-card">
+                                  <h4 className="blog-title">
+                                      <Link href={`/blog/${blog.slug}`}>
+                                          {blog.title}
+                                      </Link>
+                                  </h4>
+                                  <p className="blog-desc">{blog.summary}</p>
+                                  <Link href={`/blog/${blog.slug}`} className="read-more-btn">
+                                      Read More &rarr;
+                                  </Link>
+                              </div>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+          </section>
       </main>
-       <BlogArea />
       <FooterContact />
       <FooterThree />
     </Wrapper>
