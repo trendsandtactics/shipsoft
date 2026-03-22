@@ -20,23 +20,23 @@ const office_locations = [
     ),
     email: "sales@shipsoft.co",
     phone: "+65 86065455",
-    map: "https://www.google.com/maps/search/100+TRAS+ST,+SINGAPORE+079027"
+    map: "https://www.google.com/maps/search/100+TRAS+ST+SINGAPORE+079027",
   },
   {
     flag: "🇦🇪",
-    short: "UAE",
-    country: "United Arab Emirates",
+    short: "AE",
+    country: "UAE",
     company: "SHIPSOFT SOLUTIONS FZE",
     address: (
       <>
-        SM- OFFICE- E1-1613B <br />
+        SM-OFFICE-E1-1613B <br />
         AJMAN FREE ZONE <br />
         UNITED ARAB EMIRATES
       </>
     ),
     email: "sales@shipsoft.co",
     phone: "+971 43 704077",
-    map: "https://www.google.com/maps/search/AJMAN+FREE+ZONE,+UNITED+ARAB+EMIRATES"
+    map: "https://www.google.com/maps/search/AJMAN+FREE+ZONE+UNITED+ARAB+EMIRATES",
   },
   {
     flag: "🇸🇦",
@@ -45,29 +45,30 @@ const office_locations = [
     company: "ShipSoft Company",
     address: (
       <>
-        Room-302, 3rd Floor, 4073, <br />
+        Room-302, 3rd Floor, 4073 <br />
         Prince Mohammed Bin Fahd Road <br />
-        Al Mazruiyah Dist., Pin Code 32415-7135, <br />
-        Kingdom of Saudi Arabia.
+        Al Mazruiyah Dist., Pin Code 32415-7135 <br />
+        Kingdom of Saudi Arabia
       </>
     ),
     email: "sales@shipsoft.co",
     phone: "+966 566492783",
-    map: "https://www.google.com/maps/search/Prince+Mohammed+Bin+Fahd+Road,+Saudi+Arabia"
-  }
+    map: "https://www.google.com/maps/search/Prince+Mohammed+Bin+Fahd+Road+Saudi+Arabia",
+  },
 ];
 
 const footer_content = {
-    info: <>Shipsoft is a comprehensive web-based ERP solution tailored for the logistics industry.</>,
-    service_links: [
-        {title: "Home", link: "/"},
-        {title: "About us", link: "/about"},
-        {title: "Features", link: "/features"},
-        {title: "Modules", link: "/modules"},
-        {title: "Blog", link: "/blog"},
-        {title: "Contact us", link: "/contact"},
-    ],
+  info: "Streamline your logistics operations with ShipSoft solutions designed for modern global businesses.",
+  service_links: [
+    { title: "Home", link: "/" },
+    { title: "About us", link: "/about" },
+    { title: "Features", link: "/features" },
+    { title: "Modules", link: "/modules" },
+    { title: "Info", link: "/info" },
+    { title: "Contact us", link: "/contact" },
+  ],
 };
+
 const { info, service_links } = footer_content;
 
 const FooterTwo = () => {
@@ -110,9 +111,12 @@ const FooterTwo = () => {
                   <div className="footer-social-card">
                     <div className="footer-social-head">
                       <span className="footer-social-dot"></span>
-                      <h4>Follow & Connect</h4>
+                      <h4>Connect With Us</h4>
                     </div>
-                    <p>Stay connected with our latest logistics and technology updates.</p>
+                    <p>
+                      Follow ShipSoft across our social platforms for logistics,
+                      product, and innovation updates.
+                    </p>
                     <div className="footer-social-links">
                       <SocialLinks />
                     </div>
@@ -144,7 +148,10 @@ const FooterTwo = () => {
                     <h3 className="footer-title">Global Offices</h3>
                     <div className="office-counter">
                       <span>{String(activeOffice + 1).padStart(2, "0")}</span>
-                      <small> / {String(office_locations.length).padStart(2, "0")}</small>
+                      <small>
+                        {" "}
+                        / {String(office_locations.length).padStart(2, "0")}
+                      </small>
                     </div>
                   </div>
 
@@ -281,13 +288,18 @@ const FooterTwo = () => {
           }
 
           .footer-social-card {
-            background: rgba(255, 255, 255, 0.82);
-            border: 1px solid rgba(13, 110, 253, 0.1);
-            border-radius: 24px;
+            background: linear-gradient(145deg, #ffffff, #f3f8ff);
+            border: 1px solid rgba(13, 110, 253, 0.15);
+            border-radius: 20px;
             padding: 24px;
-            backdrop-filter: blur(12px);
-            box-shadow: 0 15px 45px rgba(10, 37, 64, 0.08);
+            box-shadow: 0 15px 40px rgba(13, 110, 253, 0.08);
+            transition: all 0.3s ease;
             max-width: 430px;
+          }
+
+          .footer-social-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px rgba(13, 110, 253, 0.15);
           }
 
           .footer-social-head {
@@ -319,6 +331,31 @@ const FooterTwo = () => {
             font-size: 15px;
           }
 
+          .footer-social-links :global(a) {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #111827;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            margin-right: 10px;
+            margin-bottom: 8px;
+          }
+
+          .footer-social-links :global(a:hover) {
+            background: linear-gradient(135deg, #0d6efd, #4f9cff);
+            color: #ffffff;
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(13, 110, 253, 0.25);
+            border-color: transparent;
+          }
+
           .footer-title-row {
             display: flex;
             align-items: center;
@@ -333,7 +370,7 @@ const FooterTwo = () => {
             line-height: 1.1;
             font-weight: 800;
             color: #0f172a;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.03em;
           }
 
           .footer-title-row .footer-title {
@@ -374,9 +411,10 @@ const FooterTwo = () => {
             align-items: center;
             gap: 12px;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: 500;
-            color: #556070;
+            font-size: 17px;
+            font-weight: 600;
+            color: #111827;
+            letter-spacing: 0.2px;
             transition: all 0.3s ease;
           }
 
@@ -396,14 +434,20 @@ const FooterTwo = () => {
             color: #0d6efd;
             font-size: 13px;
             flex: 0 0 auto;
+            transition: all 0.3s ease;
+          }
+
+          .footer-links-list li a:hover .link-arrow {
+            background: #0d6efd;
+            color: #ffffff;
           }
 
           .office-card {
             position: relative;
             border-radius: 30px;
-            background: linear-gradient(145deg, #ffffff 0%, #f4f8ff 100%);
-            border: 1px solid rgba(13, 110, 253, 0.12);
-            box-shadow: 0 25px 70px rgba(15, 23, 42, 0.10);
+            background: linear-gradient(145deg, #ffffff, #f7fbff);
+            border: 1px solid rgba(13, 110, 253, 0.15);
+            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
             padding: 34px;
             overflow: hidden;
           }
@@ -416,7 +460,11 @@ const FooterTwo = () => {
             width: 220px;
             height: 220px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(13, 110, 253, 0.15) 0%, rgba(13, 110, 253, 0) 70%);
+            background: radial-gradient(
+              circle,
+              rgba(13, 110, 253, 0.15) 0%,
+              rgba(13, 110, 253, 0) 70%
+            );
           }
 
           .office-card::after {
@@ -427,7 +475,11 @@ const FooterTwo = () => {
             width: 180px;
             height: 180px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(0, 163, 255, 0.08) 0%, rgba(0, 163, 255, 0) 70%);
+            background: radial-gradient(
+              circle,
+              rgba(0, 163, 255, 0.08) 0%,
+              rgba(0, 163, 255, 0) 70%
+            );
           }
 
           .office-card-inner {
@@ -481,7 +533,11 @@ const FooterTwo = () => {
           .office-divider {
             width: 100%;
             height: 1px;
-            background: linear-gradient(90deg, rgba(13,110,253,0.22), rgba(13,110,253,0));
+            background: linear-gradient(
+              90deg,
+              rgba(13, 110, 253, 0.22),
+              rgba(13, 110, 253, 0)
+            );
             margin-bottom: 24px;
           }
 
@@ -584,9 +640,9 @@ const FooterTwo = () => {
           }
 
           .footer-bottom-links a {
-            color: #5d6677;
+            color: #111827;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             transition: 0.3s ease;
           }
 
@@ -665,6 +721,12 @@ const FooterTwo = () => {
               width: 40px;
               height: 40px;
               min-width: 40px;
+            }
+
+            .footer-social-links :global(a) {
+              width: 40px;
+              height: 40px;
+              font-size: 15px;
             }
           }
         `}</style>
