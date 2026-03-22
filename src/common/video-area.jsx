@@ -29,7 +29,7 @@ const VideoArea = ({service})  => {
             <VideoPopup
                 isVideoOpen={isVideoOpen}
                 setIsVideoOpen={setIsVideoOpen}
-                videoId={"dGcsHMXbSOA"}
+                videoId={"sBNTouz8w9Q"}
             />
             {/* video modal end */}
     </>
