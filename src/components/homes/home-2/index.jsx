@@ -4,7 +4,7 @@ import HeroArea from "./hero-area";
 import BrandArea from "./brand-area";
 import OfferArea from "./offer-area";
 import BusinessArea from "./business-area";
-import Aboutpage from "./Aboutpage";
+import Aboutpage from "./AboutPage";
 import TestimonialArea from "./testimonial-area";
 import BlogArea from "./blog-area";
 import CtaArea from "./cta-area";
