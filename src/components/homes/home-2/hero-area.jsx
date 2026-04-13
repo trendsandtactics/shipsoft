@@ -10,15 +10,16 @@ import hero_bg from "@assets/img/hero/hero-2/background.png";
 const HeroArea = () => {
   return (
     <section
-      className="tp-hero-2-area p-relative d-flex align-items-center"
+      className="tp-hero-2-area p-relative"
       style={{
         backgroundImage: `url(${hero_bg.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         minHeight: "100vh",
+        paddingTop: "120px", // push content to top nicely
       }}
     >
-      <div className="tp-hero-2-wrapper w-100">
+      <div className="tp-hero-2-wrapper">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-10 col-lg-11 col-md-12">
@@ -36,10 +37,10 @@ const HeroArea = () => {
                 <h1
                   className="tp-hero-2-title fadeUp"
                   style={{
-                    fontSize: "clamp(32px, 5vw, 64px)",
+                    fontSize: "clamp(32px, 5vw, 60px)",
                     fontWeight: "700",
                     lineHeight: "1.2",
-                    marginBottom: "30px",
+                    marginBottom: "25px",
                   }}
                 >
                   AI-Powered <br />
@@ -55,9 +56,9 @@ const HeroArea = () => {
                     href="/contact"
                     className="tp-btn"
                     style={{
-                      padding: "14px 32px",
-                      fontSize: "16px",
+                      padding: "14px 30px",
                       borderRadius: "30px",
+                      fontSize: "16px",
                     }}
                   >
                     Request Demo
@@ -70,18 +71,6 @@ const HeroArea = () => {
         </div>
       </div>
 
-      {/* Optional Overlay for better contrast */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          background: "rgba(255,255,255,0.6)",
-          zIndex: 0,
-        }}
-      ></div>
     </section>
   );
 };
