@@ -17,7 +17,6 @@ const HomeTwo = () => {
       <main>
         <HeroArea />
         <BusinessArea />
-        <Aboutpage />
         <OfferArea />
         <TestimonialArea />
         <BrandArea />
