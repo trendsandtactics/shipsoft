@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image';
-import { Navigation, Autoplay } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
 
 import shape_1 from "@assets/img/hero/hero-2/1.png";
 import shape_2 from "@assets/img/hero/hero-2/2.png";
@@ -12,12 +10,17 @@ import hero_bg from "@assets/img/hero/hero-2/background.png";
 const HeroArea = () => {
   return (
     <section
-      className="tp-hero-2-area p-relative"
-      style={{ backgroundImage: `url(${hero_bg.src})`, backgroundSize: "cover" }}
+      className="tp-hero-2-area p-relative d-flex align-items-center"
+      style={{
+        backgroundImage: `url(${hero_bg.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        minHeight: "100vh",
+      }}
     >
-      <div className="tp-hero-2-wrapper p-relative">
+      <div className="tp-hero-2-wrapper w-100">
         <div className="container">
-          <div className="row align-items-center justify-content-center">
+          <div className="row justify-content-center">
             <div className="col-xl-10 col-lg-11 col-md-12">
               
               {/* Shapes */}
@@ -28,21 +31,36 @@ const HeroArea = () => {
               </div>
 
               {/* Content */}
-              <div className="tp-hero-2-content text-center pt-100 pb-120">
+              <div className="tp-hero-2-content text-center">
                 
-                <h3 className="tp-hero-2-title fadeUp">
+                <h1
+                  className="tp-hero-2-title fadeUp"
+                  style={{
+                    fontSize: "clamp(32px, 5vw, 64px)",
+                    fontWeight: "700",
+                    lineHeight: "1.2",
+                    marginBottom: "30px",
+                  }}
+                >
                   AI-Powered <br />
-                  <span>Freight Management</span> <br />
+                  <span style={{ color: "#2bb6c4" }}>
+                    Freight Management
+                  </span> <br />
                   Platform
-                </h3>
+                </h1>
 
-                {/* Buttons */}
-                <div className="tp-hero-2-btn fadeUp" style={{ marginTop: "30px" }}>
-                  <Link className="tp-btn mr-15" href="/contact">
+                {/* Button */}
+                <div className="tp-hero-2-btn fadeUp">
+                  <Link
+                    href="/contact"
+                    className="tp-btn"
+                    style={{
+                      padding: "14px 32px",
+                      fontSize: "16px",
+                      borderRadius: "30px",
+                    }}
+                  >
                     Request Demo
-                  </Link>
-                  <Link className="tp-btn-border" href="/about">
-                    Learn More
                   </Link>
                 </div>
 
@@ -51,6 +69,19 @@ const HeroArea = () => {
           </div>
         </div>
       </div>
+
+      {/* Optional Overlay for better contrast */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          background: "rgba(255,255,255,0.6)",
+          zIndex: 0,
+        }}
+      ></div>
     </section>
   );
 };
