@@ -1,109 +1,75 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+<section className="w-full py-16 px-6 bg-white">
+  <div className="max-w-5xl mx-auto">
 
-import business_img_1 from "@assets/img/business/img-1.jpg";
+    {/* HEADER */}
+    <div className="mb-10">
+      <span className="text-sm font-semibold text-blue-600 uppercase tracking-wide">
+        About Platform
+      </span>
 
-const AboutPage = () => {
-  return (
-    <section className="w-full py-20 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-white to-blue-50">
-      
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
-        
-        {/* LEFT CONTENT */}
-        <div className="flex flex-col gap-6 order-2 lg:order-1">
-          
-          <span className="text-sm font-semibold text-blue-600 uppercase tracking-widest">
-            About Platform
-          </span>
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-3 leading-tight">
+        Empowering Freight Forwarding with{" "}
+        <span className="text-blue-600">AI & Innovation</span>
+      </h2>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Empowering Freight Forwarding with{" "}
-            <span className="text-blue-600">AI & Innovation</span>
-          </h2>
+      <p className="text-gray-600 mt-4 max-w-2xl">
+        Fresa Technologies helps forwarders work faster, smarter, and more efficiently using AI-driven automation.
+      </p>
 
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Fresa Technologies helps forwarders work faster, smarter, and more efficiently using AI-driven automation.
-          </p>
+      {/* CTA */}
+      <div className="flex items-center gap-6 mt-5">
+        <a
+          href="/contact"
+          className="px-6 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+        >
+          Get Started
+        </a>
 
-          {/* CTA FIRST (better conversion) */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 mt-2">
-            <Link
-              href="/contact"
-              className="px-8 py-3 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition"
-            >
-              Get Started
-            </Link>
-
-            <span className="text-gray-700 font-medium text-lg">
-              +971 43 704077
-            </span>
-          </div>
-
-          {/* FEATURES */}
-          <div className="grid sm:grid-cols-2 gap-5 mt-6">
-            
-            <div className="p-5 bg-white rounded-2xl shadow-md hover:shadow-xl transition group">
-              <h4 className="font-semibold text-gray-800 text-lg group-hover:text-blue-600">
-                Automate Repetitive Tasks
-              </h4>
-              <p className="text-sm text-gray-500 mt-2">
-                Let AI handle routine operations so your team can focus on core business tasks.
-              </p>
-            </div>
-
-            <div className="p-5 bg-white rounded-2xl shadow-md hover:shadow-xl transition group">
-              <h4 className="font-semibold text-gray-800 text-lg group-hover:text-blue-600">
-                Reduce Errors
-              </h4>
-              <p className="text-sm text-gray-500 mt-2">
-                Ensure accuracy across shipments, documents, and compliance using AI validation.
-              </p>
-            </div>
-
-            <div className="p-5 bg-white rounded-2xl shadow-md hover:shadow-xl transition group">
-              <h4 className="font-semibold text-gray-800 text-lg group-hover:text-blue-600">
-                Smarter Insights
-              </h4>
-              <p className="text-sm text-gray-500 mt-2">
-                Convert logistics data into actionable insights for better decision-making.
-              </p>
-            </div>
-
-            <div className="p-5 bg-white rounded-2xl shadow-md hover:shadow-xl transition group">
-              <h4 className="font-semibold text-gray-800 text-lg group-hover:text-blue-600">
-                Drive Business Growth
-              </h4>
-              <p className="text-sm text-gray-500 mt-2">
-                Scale faster with automation and eliminate time-consuming manual work.
-              </p>
-            </div>
-
-          </div>
-
-          {/* SUPPORT TEXT LAST */}
-          <p className="text-gray-500 leading-relaxed mt-4">
-            Designed for modern logistics businesses, our platform helps you stay competitive in a fast-paced global market.
-          </p>
-
-        </div>
-
-        {/* RIGHT IMAGE */}
-        <div className="relative group order-1 lg:order-2">
-          <div className="rounded-3xl overflow-hidden shadow-2xl">
-            <Image
-              src={business_img_1}
-              alt="Logistics Technology"
-              className="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700"
-            />
-          </div>
-
-          <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-blue-500 opacity-20 rounded-full blur-3xl"></div>
-        </div>
-
+        <span className="text-gray-700 font-medium">
+          +971 43 704077
+        </span>
       </div>
-    </section>
-  );
-};
+    </div>
 
-export default AboutPage;
+    {/* FEATURES GRID */}
+    <div className="grid md:grid-cols-2 gap-6">
+
+      <div className="p-6 border rounded-xl hover:shadow-md transition">
+        <h4 className="font-semibold text-lg text-gray-900">
+          Automate Repetitive Tasks
+        </h4>
+        <p className="text-gray-600 mt-2 text-sm">
+          Let AI handle routine operations so your team can focus on core business tasks.
+        </p>
+      </div>
+
+      <div className="p-6 border rounded-xl hover:shadow-md transition">
+        <h4 className="font-semibold text-lg text-gray-900">
+          Reduce Errors
+        </h4>
+        <p className="text-gray-600 mt-2 text-sm">
+          Ensure accuracy across shipments, documents, and compliance using AI validation.
+        </p>
+      </div>
+
+      <div className="p-6 border rounded-xl hover:shadow-md transition">
+        <h4 className="font-semibold text-lg text-gray-900">
+          Smarter Insights
+        </h4>
+        <p className="text-gray-600 mt-2 text-sm">
+          Convert logistics data into actionable insights for better decision-making.
+        </p>
+      </div>
+
+      <div className="p-6 border rounded-xl hover:shadow-md transition">
+        <h4 className="font-semibold text-lg text-gray-900">
+          Drive Business Growth
+        </h4>
+        <p className="text-gray-600 mt-2 text-sm">
+          Scale faster with automation and eliminate manual work.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
