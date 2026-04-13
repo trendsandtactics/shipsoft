@@ -7,3 +7,26 @@
 @import "~bootstrap/scss/bootstrap";
 @import "swiper/css/bundle";
 @import "/public/assets/scss/main.scss"
+
+/* Tablet */
+@media (max-width: 992px) {
+  .tp-hero-2-area {
+    padding-top: 100px !important;
+    background-position: center left !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .tp-hero-2-area {
+    padding-top: 80px !important;
+    min-height: auto !important;
+    background-position: center !important;
+  }
+  .tp-hero-2-content {
+    padding: 15px !important;
+  }
+  .tp-hero-2-title {
+    font-size: 28px !important;
+  }
+}

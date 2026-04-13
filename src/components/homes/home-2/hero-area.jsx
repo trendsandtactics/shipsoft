@@ -14,7 +14,7 @@ const HeroArea = () => {
       style={{
         backgroundImage: `url(${hero_bg.src})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "left center",
         minHeight: "100vh",
         paddingTop: "120px", // push content to top nicely
       }}
@@ -32,15 +32,26 @@ const HeroArea = () => {
               </div>
 
               {/* Content */}
-              <div className="tp-hero-2-content text-center">
+              <div
+                className="tp-hero-2-content text-center"
+                style={{
+                  position: "relative",
+                  zIndex: 2,
+                  maxWidth: "700px",
+                  margin: "0 auto",
+                  padding: "20px",
+                  background: "rgba(255,255,255,0.7)", // soft background only for text
+                  borderRadius: "12px",
+                }}
+              >
                 
                 <h1
                   className="tp-hero-2-title fadeUp"
                   style={{
-                    fontSize: "clamp(32px, 5vw, 60px)",
+                    fontSize: "clamp(28px, 5vw, 60px)",
                     fontWeight: "700",
                     lineHeight: "1.2",
-                    marginBottom: "25px",
+                    marginBottom: "20px",
                   }}
                 >
                   AI-Powered <br />
@@ -56,9 +67,9 @@ const HeroArea = () => {
                     href="/contact"
                     className="tp-btn"
                     style={{
-                      padding: "14px 30px",
+                      padding: "12px 28px",
                       borderRadius: "30px",
-                      fontSize: "16px",
+                      fontSize: "15px",
                     }}
                   >
                     Request Demo
