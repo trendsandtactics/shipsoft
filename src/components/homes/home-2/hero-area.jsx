@@ -15,10 +15,11 @@ const HeroArea = () => {
           <div className="col-xl-4 col-lg-5 col-md-10 offset-xl-2">
             <div className="content">
               
-              <h1 className="title">
-                Automated, AI-Integrated
-                <span>ERP Logistics Software</span>
-              </h1>
+            <h1 className="title">
+  Automated,
+  <span className="line-break">AI-Integrated</span>
+  <span>ERP Logistics Software</span>
+</h1>
 
               <Link className="tp-btn cta-custom" href="/contact">
                 Request Demo
