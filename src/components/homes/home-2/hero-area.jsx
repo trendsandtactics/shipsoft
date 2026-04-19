@@ -13,13 +13,13 @@ const HeroArea = () => {
             <div className="content">
               
               <h1 className="title">
-                Automated, AI-Integrated
+                Automated,  AI-Integrated
                 <span>ERP Logistics Software</span>
               </h1>
 
-              <Link href="/contact" className="cta-btn">
-                Request Demo
-              </Link>
+                <Link className="tp-btn" href="/contact">
+                  Request Demo
+                </Link>
 
             </div>
           </div>
