@@ -33,6 +33,7 @@ const HeroArea = () => {
 
       <style jsx>{`
         .hero {
+          position: relative;
           background-image: url(${hero_bg.src});
           background-size: cover;
           background-position: left center;
@@ -42,20 +43,38 @@ const HeroArea = () => {
           align-items: center;
         }
 
+        /* Gradient overlay for readability */
+        .hero::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to right,
+            rgba(255,255,255,0.85) 0%,
+            rgba(255,255,255,0.6) 40%,
+            rgba(255,255,255,0.2) 70%,
+            transparent 100%
+          );
+          z-index: 1;
+        }
+
         .full-height {
           min-height: calc(100vh - 100px);
         }
 
         .content {
           max-width: 420px;
+          width: 100%;
           text-align: left;
           margin-left: auto;
+          position: relative;
+          z-index: 2;
         }
 
         .title {
           font-size: clamp(28px, 3.5vw, 54px);
           font-weight: 700;
-          line-height: 1.2;
+          line-height: 1.3;
           margin-bottom: 18px;
           color: #0b1c2c;
         }
@@ -68,34 +87,52 @@ const HeroArea = () => {
           display: block;
         }
 
-        /* Apply previous accent color only to last line */
+        /* Accent color only for last line */
         .highlight {
           color: #2bb6c4;
         }
 
         .cta-custom {
-          margin-top: 12px;
+          margin-top: 16px;
           display: inline-block;
         }
 
+        /* TABLET */
         @media (max-width: 992px) {
+          .hero {
+            background-position: center;
+          }
+
           .content {
             text-align: center;
             margin: 0 auto;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .hero {
-            padding-top: 80px;
+            padding: 0 20px;
           }
 
           .title {
-            font-size: 24px;
-            line-height: 1.3;
+            font-size: 28px;
           }
         }
 
+        /* MOBILE */
+        @media (max-width: 768px) {
+          .hero {
+            padding-top: 80px;
+            align-items: flex-end;
+          }
+
+          .content {
+            max-width: 100%;
+            padding: 0 16px;
+          }
+
+          .title {
+            font-size: 22px;
+            line-height: 1.4;
+          }
+        }
+
+        /* SMALL MOBILE */
         @media (max-width: 480px) {
           .title {
             font-size: 20px;
