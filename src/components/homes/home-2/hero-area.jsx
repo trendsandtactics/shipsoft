@@ -18,7 +18,7 @@ const HeroArea = () => {
               <h1 className="title">
                 Automated,
                 <span className="line-break">AI-Integrated</span>
-                <span>ERP Logistics Software</span>
+                <span className="highlight">ERP Logistics Software</span>
               </h1>
 
               <Link className="tp-btn cta-custom" href="/contact">
@@ -60,7 +60,6 @@ const HeroArea = () => {
           color: #0b1c2c;
         }
 
-        /* Force each span to new line, keep same color */
         .title span {
           display: block;
         }
@@ -69,12 +68,16 @@ const HeroArea = () => {
           display: block;
         }
 
+        /* Apply previous accent color only to last line */
+        .highlight {
+          color: #2bb6c4;
+        }
+
         .cta-custom {
           margin-top: 12px;
           display: inline-block;
         }
 
-        /* TABLET */
         @media (max-width: 992px) {
           .content {
             text-align: center;
@@ -82,7 +85,6 @@ const HeroArea = () => {
           }
         }
 
-        /* MOBILE */
         @media (max-width: 768px) {
           .hero {
             padding-top: 80px;
