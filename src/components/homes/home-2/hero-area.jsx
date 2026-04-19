@@ -16,28 +16,27 @@ const HeroArea = () => {
     >
       <div className="tp-hero-2-wrapper">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-10 col-lg-11 col-md-12">
-
-              {/* Content */}
+          <div className="row justify-content-end"> {/* move to right */}
+            
+            <div className="col-xl-6 col-lg-7 col-md-10">
+              
               <div
-                className="tp-hero-2-content text-center"
+                className="tp-hero-2-content"
                 style={{
                   position: "relative",
                   zIndex: 2,
-                  maxWidth: "800px",
-                  margin: "0 auto",
                   padding: "clamp(8px, 3vw, 20px)",
+                  textAlign: "left",
                 }}
               >
                 
                 <h1
                   className="tp-hero-2-title"
                   style={{
-                    fontSize: "clamp(18px, 3.5vw, 60px)",
+                    fontSize: "clamp(18px, 3.5vw, 56px)",
                     fontWeight: "700",
                     lineHeight: "1.25",
-                    marginBottom: "12px",
+                    marginBottom: "14px",
                     color: "#0b1c2c",
                     textShadow: "0 2px 6px rgba(0,0,0,0.2)"
                   }}
@@ -48,7 +47,6 @@ const HeroArea = () => {
                   </span>
                 </h1>
 
-                {/* Button */}
                 <div className="tp-hero-2-btn">
                   <Link
                     href="/contact"
@@ -64,20 +62,22 @@ const HeroArea = () => {
                 </div>
 
               </div>
+
             </div>
           </div>
         </div>
       </div>
 
-      {/* Extra mobile control */}
+      {/* Mobile adjustments */}
       <style jsx>{`
         @media (max-width: 768px) {
+          .tp-hero-2-content {
+            text-align: center;
+            margin: 0 auto;
+          }
+
           .tp-hero-2-title {
             font-size: 18px !important;
-            line-height: 1.3;
-          }
-          .tp-hero-2-content {
-            max-width: 92%;
           }
         }
 
