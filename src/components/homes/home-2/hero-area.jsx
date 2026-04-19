@@ -5,30 +5,18 @@ import hero_bg from "@assets/img/hero/hero-2/shipsoft3.png";
 const HeroArea = () => {
   return (
     <section className="hero">
-      <div className="container">
-        <div className="row align-items-center full-height">
+      
+      {/* RIGHT FIXED CONTENT */}
+      <div className="content">
+        <h1 className="title">
+          Automated,
+          <span className="line-break">AI-Integrated</span>
+          <span className="highlight">ERP Logistics Software</span>
+        </h1>
 
-          {/* LEFT EMPTY SPACE */}
-          <div className="col-xl-6 col-lg-5"></div>
-
-          {/* RIGHT CONTENT */}
-          <div className="col-xl-4 col-lg-5 col-md-10 offset-xl-2">
-            <div className="content">
-              
-              <h1 className="title">
-                Automated,
-                <span className="line-break">AI-Integrated</span>
-                <span className="highlight">ERP Logistics Software</span>
-              </h1>
-
-              <Link className="tp-btn cta-custom" href="/contact">
-                Request Demo
-              </Link>
-
-            </div>
-          </div>
-
-        </div>
+        <Link className="tp-btn cta-custom" href="/contact">
+          Request Demo
+        </Link>
       </div>
 
       <style jsx>{`
@@ -39,36 +27,17 @@ const HeroArea = () => {
           background-position: left center;
           min-height: 100vh;
           padding-top: 100px;
-          display: flex;
-          align-items: center;
         }
 
-        /* Gradient overlay for readability */
-        .hero::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(
-            to right,
-            rgba(255,255,255,0.85) 0%,
-            rgba(255,255,255,0.6) 40%,
-            rgba(255,255,255,0.2) 70%,
-            transparent 100%
-          );
-          z-index: 1;
-        }
-
-        .full-height {
-          min-height: calc(100vh - 100px);
-        }
-
+        /* RIGHT CORNER POSITIONING */
         .content {
+          position: absolute;
+          top: 50%;
+          right: 80px;
+          transform: translateY(-50%);
           max-width: 420px;
           width: 100%;
           text-align: left;
-          margin-left: auto;
-          position: relative;
-          z-index: 2;
         }
 
         .title {
@@ -83,11 +52,6 @@ const HeroArea = () => {
           display: block;
         }
 
-        .line-break {
-          display: block;
-        }
-
-        /* Accent color only for last line */
         .highlight {
           color: #2bb6c4;
         }
@@ -99,14 +63,9 @@ const HeroArea = () => {
 
         /* TABLET */
         @media (max-width: 992px) {
-          .hero {
-            background-position: center;
-          }
-
           .content {
-            text-align: center;
-            margin: 0 auto;
-            padding: 0 20px;
+            right: 40px;
+            max-width: 360px;
           }
 
           .title {
@@ -116,19 +75,22 @@ const HeroArea = () => {
 
         /* MOBILE */
         @media (max-width: 768px) {
-          .hero {
-            padding-top: 80px;
-            align-items: flex-end;
+          .content {
+            position: static;
+            transform: none;
+            margin: 0 auto;
+            padding: 0 16px;
+            text-align: center;
           }
 
-          .content {
-            max-width: 100%;
-            padding: 0 16px;
+          .hero {
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 40px;
           }
 
           .title {
             font-size: 22px;
-            line-height: 1.4;
           }
         }
 
