@@ -28,14 +28,14 @@ const BusinessArea = () => {
         <div className="container">
           <div className="row align-items-center">
 
-            {/* LEFT SIDE - ONLY ONE IMAGE */}
+            {/* LEFT SIDE */}
             <div className="col-lg-6">
               <div className="tp-business-thumb text-center">
                 <Image src={business_img_1} alt="business" />
               </div>
             </div>
 
-            {/* RIGHT SIDE CONTENT */}
+            {/* RIGHT SIDE */}
             <div className="col-lg-6">
               <div className="tp-business-title-wrapper">
                 
@@ -52,10 +52,11 @@ const BusinessArea = () => {
                 </h3>
 
                 <p>
-                  Shipsoft Solutions is a Singapore-based IT company specializing in cutting-edge software for logistics and supply chain management. 
-                  Our mission is to deliver innovative, cost-effective digital solutions that empower businesses to optimize operations and drive growth. 
-                  We support organizations that rely on technology today, as well as those transitioning toward a fully digital environment, helping them 
-                  thrive in an increasingly competitive and fast-paced global market.
+                  Shipsoft is a modern software solution designed for logistics and supply chain management. 
+                  We collaborate with industry experts to develop AI-powered ERP automation that helps businesses streamline operations and improve efficiency. 
+                  We offer tools that minimize manual effort while delivering actionable insights tailored to your workflow. 
+                  Our platform focuses on a user-friendly interface that is easy to navigate, enabling users to move seamlessly through processes without extensive training. 
+                  Built with scalability and cost-effectiveness in mind, Shipsoft grows with your business, adapting to changing needs and supporting long-term success.
                 </p>
               </div>
 
