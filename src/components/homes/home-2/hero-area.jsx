@@ -5,46 +5,51 @@ import hero_bg from "@assets/img/hero/hero-2/shipsoft3.png";
 const HeroArea = () => {
   return (
     <section className="hero">
-      
-      {/* RIGHT FIXED CONTENT */}
-      <div className="content">
-        <h1 className="title">
-          Automated,
-          <span className="line-break">AI-Integrated</span>
-          <span className="highlight">ERP Logistics Software</span>
-        </h1>
+      <div className="container hero-inner">
+        
+        <div className="content">
+          <h1 className="title">
+            Automated,
+            <span>AI-Integrated</span>
+            <span className="highlight">ERP Logistics Software</span>
+          </h1>
 
-        <Link className="tp-btn cta-custom" href="/contact">
-          Request Demo
-        </Link>
+          <Link className="tp-btn cta-custom" href="/contact">
+            Request Demo
+          </Link>
+        </div>
+
       </div>
 
       <style jsx>{`
         .hero {
-          position: relative;
           background-image: url(${hero_bg.src});
           background-size: cover;
           background-position: left center;
           min-height: 100vh;
           padding-top: 100px;
+          display: flex;
+          align-items: center;
         }
 
-        /* RIGHT CORNER POSITIONING */
-        .content {
-          position: absolute;
-          top: 50%;
-          right: 80px;
-          transform: translateY(-50%);
-          max-width: 420px;
+        /* KEY FIX: FLEX RIGHT ALIGN */
+        .hero-inner {
+          display: flex;
+          justify-content: flex-end;
           width: 100%;
-          text-align: left;
+        }
+
+        .content {
+          max-width: 480px;
+          width: 100%;
+          padding-right: clamp(20px, 5vw, 80px); /* responsive spacing */
         }
 
         .title {
-          font-size: clamp(28px, 3.5vw, 54px);
+          font-size: clamp(32px, 4vw, 56px);
           font-weight: 700;
-          line-height: 1.3;
-          margin-bottom: 18px;
+          line-height: 1.25;
+          margin-bottom: 20px;
           color: #0b1c2c;
         }
 
@@ -57,40 +62,35 @@ const HeroArea = () => {
         }
 
         .cta-custom {
-          margin-top: 16px;
+          margin-top: 18px;
           display: inline-block;
         }
 
         /* TABLET */
         @media (max-width: 992px) {
-          .content {
-            right: 40px;
-            max-width: 360px;
+          .hero {
+            background-position: center;
           }
 
-          .title {
-            font-size: 28px;
+          .hero-inner {
+            justify-content: center;
+          }
+
+          .content {
+            text-align: center;
+            padding-right: 0;
           }
         }
 
         /* MOBILE */
         @media (max-width: 768px) {
-          .content {
-            position: static;
-            transform: none;
-            margin: 0 auto;
-            padding: 0 16px;
-            text-align: center;
-          }
-
           .hero {
-            display: flex;
             align-items: flex-end;
             padding-bottom: 40px;
           }
 
           .title {
-            font-size: 22px;
+            font-size: 24px;
           }
         }
 
