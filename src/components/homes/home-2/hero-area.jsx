@@ -6,20 +6,23 @@ const HeroArea = () => {
   return (
     <section className="hero">
       <div className="container">
-        <div className="row align-items-center justify-content-end full-height">
+        <div className="row align-items-center full-height">
 
-          {/* RIGHT CONTENT */}
-          <div className="col-xl-6 col-lg-7 col-md-10">
+          {/* LEFT EMPTY SPACE */}
+          <div className="col-xl-6 col-lg-5"></div>
+
+          {/* RIGHT CONTENT (~40%) */}
+          <div className="col-xl-4 col-lg-5 col-md-10 offset-xl-2">
             <div className="content">
               
               <h1 className="title">
-                Automated,  AI-Integrated
+                Automated, AI-Integrated
                 <span>ERP Logistics Software</span>
               </h1>
 
-                <Link className="tp-btn" href="/contact">
-                  Request Demo
-                </Link>
+              <Link className="tp-btn cta-custom" href="/contact">
+                Request Demo
+              </Link>
 
             </div>
           </div>
@@ -43,15 +46,16 @@ const HeroArea = () => {
         }
 
         .content {
-          max-width: 520px;
+          max-width: 420px;
           text-align: left;
+          margin-left: auto;
         }
 
         .title {
-          font-size: clamp(28px, 3.5vw, 56px);
+          font-size: clamp(28px, 3.5vw, 54px);
           font-weight: 700;
           line-height: 1.2;
-          margin-bottom: 20px;
+          margin-bottom: 18px;
           color: #0b1c2c;
         }
 
@@ -60,29 +64,9 @@ const HeroArea = () => {
           color: #2bb6c4;
         }
 
-        /* CTA BUTTON */
-        .cta-btn {
+        .cta-custom {
+          margin-top: 12px;
           display: inline-block;
-          margin-top: 10px;
-          padding: 12px 26px;
-          background: linear-gradient(135deg, #2bb6c4, #1e9fb0);
-          color: #fff;
-          font-size: 14px;
-          font-weight: 600;
-          border-radius: 30px;
-          box-shadow: 0 8px 20px rgba(43, 182, 196, 0.3);
-          transition: all 0.3s ease;
-        }
-
-        .cta-btn:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 12px 26px rgba(43, 182, 196, 0.4);
-          background: linear-gradient(135deg, #1e9fb0, #178a99);
-        }
-
-        .cta-btn:active {
-          transform: translateY(0);
-          box-shadow: 0 6px 14px rgba(43, 182, 196, 0.25);
         }
 
         /* TABLET */
