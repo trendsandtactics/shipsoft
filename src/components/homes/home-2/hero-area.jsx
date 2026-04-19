@@ -5,85 +5,94 @@ import hero_bg from "@assets/img/hero/hero-2/background.png";
 const HeroArea = () => {
   return (
     <section
-      className="tp-hero-2-area p-relative"
+      className="hero"
       style={{
         backgroundImage: `url(${hero_bg.src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "left center",
-        minHeight: "100vh",
-        paddingTop: "clamp(70px, 10vw, 120px)",
       }}
     >
-      <div className="tp-hero-2-wrapper">
-        <div className="container">
-          <div className="row justify-content-end"> {/* move to right */}
-            
-            <div className="col-xl-6 col-lg-7 col-md-10">
+      <div className="container">
+        <div className="row align-items-center justify-content-end full-height">
+
+          {/* RIGHT CONTENT */}
+          <div className="col-xl-6 col-lg-7 col-md-10">
+            <div className="content">
               
-              <div
-                className="tp-hero-2-content"
-                style={{
-                  position: "relative",
-                  zIndex: 2,
-                  padding: "clamp(8px, 3vw, 20px)",
-                  textAlign: "left",
-                }}
-              >
-                
-                <h1
-                  className="tp-hero-2-title"
-                  style={{
-                    fontSize: "clamp(18px, 3.5vw, 56px)",
-                    fontWeight: "700",
-                    lineHeight: "1.25",
-                    marginBottom: "14px",
-                    color: "#0b1c2c",
-                    textShadow: "0 2px 6px rgba(0,0,0,0.2)"
-                  }}
-                >
-                  Automated, AI-Integrated <br />
-                  <span style={{ color: "#2bb6c4" }}>
-                    ERP Logistics Software
-                  </span>
-                </h1>
+              <h1 className="title">
+                Automated, AI-Integrated
+                <span>ERP Logistics Software</span>
+              </h1>
 
-                <div className="tp-hero-2-btn">
-                  <Link
-                    href="/contact"
-                    className="tp-btn"
-                    style={{
-                      padding: "8px 18px",
-                      borderRadius: "30px",
-                      fontSize: "clamp(11px, 2.2vw, 15px)",
-                    }}
-                  >
-                    Request Demo
-                  </Link>
-                </div>
-
-              </div>
+              <Link href="/contact" className="btn">
+                Request Demo
+              </Link>
 
             </div>
           </div>
+
         </div>
       </div>
 
-      {/* Mobile adjustments */}
+      {/* STYLES */}
       <style jsx>{`
-        @media (max-width: 768px) {
-          .tp-hero-2-content {
+        .hero {
+          background-size: cover;
+          background-position: left center;
+          min-height: 100vh;
+          padding-top: 100px;
+        }
+
+        .full-height {
+          min-height: calc(100vh - 100px);
+        }
+
+        .content {
+          text-align: left;
+          max-width: 520px;
+        }
+
+        .title {
+          font-weight: 700;
+          line-height: 1.2;
+          margin-bottom: 20px;
+          color: #0b1c2c;
+          font-size: clamp(22px, 3vw, 54px);
+        }
+
+        .title span {
+          display: block;
+          color: #2bb6c4;
+        }
+
+        .btn {
+          display: inline-block;
+          padding: 10px 22px;
+          border-radius: 30px;
+          font-size: 14px;
+        }
+
+        /* TABLET */
+        @media (max-width: 992px) {
+          .content {
             text-align: center;
             margin: 0 auto;
           }
+        }
 
-          .tp-hero-2-title {
-            font-size: 18px !important;
+        /* MOBILE */
+        @media (max-width: 768px) {
+          .hero {
+            padding-top: 80px;
+          }
+
+          .title {
+            font-size: 20px;
+            line-height: 1.3;
           }
         }
 
         @media (max-width: 480px) {
-          .tp-hero-2-title {
-            font-size: 16px !important;
+          .title {
+            font-size: 18px;
           }
         }
       `}</style>
