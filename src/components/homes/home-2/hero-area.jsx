@@ -1,11 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import Image from 'next/image';
-
-import shape_1 from "@assets/img/hero/hero-2/1.png";
-import shape_2 from "@assets/img/hero/hero-2/2.png";
-import shape_3 from "@assets/img/hero/hero-2/3.png";  
-import hero_bg from "@assets/img/hero/hero-2/shipsoft2.png";
+import hero_bg from "@assets/img/hero/hero-2/background.png";
 
 const HeroArea = () => {
   return (
@@ -16,20 +11,13 @@ const HeroArea = () => {
         backgroundSize: "cover",
         backgroundPosition: "left center",
         minHeight: "100vh",
-        paddingTop: "clamp(80px, 10vw, 120px)",
+        paddingTop: "clamp(70px, 10vw, 120px)",
       }}
     >
       <div className="tp-hero-2-wrapper">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-10 col-lg-11 col-md-12">
-              
-              {/* Shapes (hidden on small screens) */}
-              <div className="tp-hero-2-shape hide-mobile">
-                <Image className="shape-1" src={shape_1} alt="shape" />
-                <Image className="shape-2" src={shape_2} alt="shape" />
-                <Image className="shape-3" src={shape_3} alt="shape" />
-              </div>
 
               {/* Content */}
               <div
@@ -44,14 +32,14 @@ const HeroArea = () => {
               >
                 
                 <h1
-                  className="tp-hero-2-title fadeUp"
+                  className="tp-hero-2-title"
                   style={{
-                    fontSize: "clamp(18px, 3.8vw, 60px)", // tighter scaling
+                    fontSize: "clamp(18px, 3.5vw, 60px)",
                     fontWeight: "700",
                     lineHeight: "1.25",
-                    marginBottom: "14px",
+                    marginBottom: "12px",
                     color: "#0b1c2c",
-                    textShadow: "0 2px 8px rgba(0,0,0,0.2)"
+                    textShadow: "0 2px 6px rgba(0,0,0,0.2)"
                   }}
                 >
                   Automated, AI-Integrated <br />
@@ -61,14 +49,14 @@ const HeroArea = () => {
                 </h1>
 
                 {/* Button */}
-                <div className="tp-hero-2-btn fadeUp">
+                <div className="tp-hero-2-btn">
                   <Link
                     href="/contact"
                     className="tp-btn"
                     style={{
-                      padding: "9px 20px",
+                      padding: "8px 18px",
                       borderRadius: "30px",
-                      fontSize: "clamp(11px, 2.3vw, 15px)",
+                      fontSize: "clamp(11px, 2.2vw, 15px)",
                     }}
                   >
                     Request Demo
@@ -81,18 +69,13 @@ const HeroArea = () => {
         </div>
       </div>
 
-      {/* Responsive tweaks */}
+      {/* Extra mobile control */}
       <style jsx>{`
         @media (max-width: 768px) {
-          .hide-mobile {
-            display: none !important; /* remove floating icons */
-          }
-
           .tp-hero-2-title {
-            font-size: 20px !important;
+            font-size: 18px !important;
             line-height: 1.3;
           }
-
           .tp-hero-2-content {
             max-width: 92%;
           }
@@ -100,7 +83,7 @@ const HeroArea = () => {
 
         @media (max-width: 480px) {
           .tp-hero-2-title {
-            font-size: 18px !important;
+            font-size: 16px !important;
           }
         }
       `}</style>
