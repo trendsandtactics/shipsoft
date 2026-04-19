@@ -24,11 +24,11 @@ const HeroArea = () => {
           <div className="row justify-content-center">
             <div className="col-xl-10 col-lg-11 col-md-12">
               
-              {/* Shapes */}
-              <div className="tp-hero-2-shape">
-                <Image className="shape-1 d-none d-lg-block" src={shape_1} alt="shape" />
-                <Image className="shape-2 d-none d-lg-block" src={shape_2} alt="shape" />
-                <Image className="shape-3 d-none d-lg-block" src={shape_3} alt="shape" />
+              {/* Shapes (hidden on small screens) */}
+              <div className="tp-hero-2-shape hide-mobile">
+                <Image className="shape-1" src={shape_1} alt="shape" />
+                <Image className="shape-2" src={shape_2} alt="shape" />
+                <Image className="shape-3" src={shape_3} alt="shape" />
               </div>
 
               {/* Content */}
@@ -39,17 +39,17 @@ const HeroArea = () => {
                   zIndex: 2,
                   maxWidth: "800px",
                   margin: "0 auto",
-                  padding: "clamp(10px, 3vw, 20px)",
+                  padding: "clamp(8px, 3vw, 20px)",
                 }}
               >
                 
                 <h1
                   className="tp-hero-2-title fadeUp"
                   style={{
-                    fontSize: "clamp(20px, 4vw, 60px)", // responsive text
+                    fontSize: "clamp(18px, 3.8vw, 60px)", // tighter scaling
                     fontWeight: "700",
-                    lineHeight: "1.2",
-                    marginBottom: "16px",
+                    lineHeight: "1.25",
+                    marginBottom: "14px",
                     color: "#0b1c2c",
                     textShadow: "0 2px 8px rgba(0,0,0,0.2)"
                   }}
@@ -66,9 +66,9 @@ const HeroArea = () => {
                     href="/contact"
                     className="tp-btn"
                     style={{
-                      padding: "10px 22px",
+                      padding: "9px 20px",
                       borderRadius: "30px",
-                      fontSize: "clamp(12px, 2.5vw, 15px)", // responsive button
+                      fontSize: "clamp(11px, 2.3vw, 15px)",
                     }}
                   >
                     Request Demo
@@ -81,16 +81,26 @@ const HeroArea = () => {
         </div>
       </div>
 
-      {/* Extra mobile optimization */}
+      {/* Responsive tweaks */}
       <style jsx>{`
         @media (max-width: 768px) {
+          .hide-mobile {
+            display: none !important; /* remove floating icons */
+          }
+
           .tp-hero-2-title {
-            font-size: 22px !important;
+            font-size: 20px !important;
             line-height: 1.3;
           }
 
           .tp-hero-2-content {
-            max-width: 90%;
+            max-width: 92%;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .tp-hero-2-title {
+            font-size: 18px !important;
           }
         }
       `}</style>
