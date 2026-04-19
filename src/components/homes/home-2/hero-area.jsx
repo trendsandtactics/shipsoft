@@ -11,15 +11,15 @@ const HeroArea = () => {
           {/* LEFT EMPTY SPACE */}
           <div className="col-xl-6 col-lg-5"></div>
 
-          {/* RIGHT CONTENT (~40%) */}
+          {/* RIGHT CONTENT */}
           <div className="col-xl-4 col-lg-5 col-md-10 offset-xl-2">
             <div className="content">
               
-            <h1 className="title">
-  Automated,
-  <span className="line-break">AI-Integrated</span>
-  <span>ERP Logistics Software</span>
-</h1>
+              <h1 className="title">
+                Automated,
+                <span className="line-break">AI-Integrated</span>
+                <span>ERP Logistics Software</span>
+              </h1>
 
               <Link className="tp-btn cta-custom" href="/contact">
                 Request Demo
@@ -60,9 +60,13 @@ const HeroArea = () => {
           color: #0b1c2c;
         }
 
+        /* Force each span to new line, keep same color */
         .title span {
           display: block;
-          color: #2bb6c4;
+        }
+
+        .line-break {
+          display: block;
         }
 
         .cta-custom {
