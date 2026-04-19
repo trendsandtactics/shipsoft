@@ -5,7 +5,7 @@ import Image from 'next/image';
 import shape_1 from "@assets/img/hero/hero-2/1.png";
 import shape_2 from "@assets/img/hero/hero-2/2.png";
 import shape_3 from "@assets/img/hero/hero-2/3.png";  
-import hero_bg from "@assets/img/hero/hero-2/background.png";
+import hero_bg from "@assets/img/hero/hero-2/shipsoft2.png";
 
 const HeroArea = () => {
   return (
@@ -16,7 +16,7 @@ const HeroArea = () => {
         backgroundSize: "cover",
         backgroundPosition: "left center",
         minHeight: "100vh",
-        paddingTop: "120px", // push content to top nicely
+        paddingTop: "120px",
       }}
     >
       <div className="tp-hero-2-wrapper">
@@ -37,11 +37,10 @@ const HeroArea = () => {
                 style={{
                   position: "relative",
                   zIndex: 2,
-                  maxWidth: "700px",
+                  maxWidth: "800px",
                   margin: "0 auto",
                   padding: "20px",
-                  background: "rgba(255,255,255,0.7)", // soft background only for text
-                  borderRadius: "12px",
+                  // removed white background
                 }}
               >
                 
@@ -52,13 +51,13 @@ const HeroArea = () => {
                     fontWeight: "700",
                     lineHeight: "1.2",
                     marginBottom: "20px",
+                    color: "#0b1c2c"
                   }}
                 >
-                  AI-Powered <br />
+                  Automated, AI-Integrated <br />
                   <span style={{ color: "#2bb6c4" }}>
-                    Freight Management
-                  </span> <br />
-                  Platform
+                    ERP Logistics Software
+                  </span>
                 </h1>
 
                 {/* Button */}
