@@ -16,7 +16,7 @@ const HeroArea = () => {
         backgroundSize: "cover",
         backgroundPosition: "left center",
         minHeight: "100vh",
-        paddingTop: "120px",
+        paddingTop: "clamp(80px, 10vw, 120px)",
       }}
     >
       <div className="tp-hero-2-wrapper">
@@ -39,19 +39,19 @@ const HeroArea = () => {
                   zIndex: 2,
                   maxWidth: "800px",
                   margin: "0 auto",
-                  padding: "20px",
-                  // removed white background
+                  padding: "clamp(10px, 3vw, 20px)",
                 }}
               >
                 
                 <h1
                   className="tp-hero-2-title fadeUp"
                   style={{
-                    fontSize: "clamp(28px, 5vw, 60px)",
+                    fontSize: "clamp(20px, 4vw, 60px)", // responsive text
                     fontWeight: "700",
                     lineHeight: "1.2",
-                    marginBottom: "20px",
-                    color: "#0b1c2c"
+                    marginBottom: "16px",
+                    color: "#0b1c2c",
+                    textShadow: "0 2px 8px rgba(0,0,0,0.2)"
                   }}
                 >
                   Automated, AI-Integrated <br />
@@ -66,9 +66,9 @@ const HeroArea = () => {
                     href="/contact"
                     className="tp-btn"
                     style={{
-                      padding: "12px 28px",
+                      padding: "10px 22px",
                       borderRadius: "30px",
-                      fontSize: "15px",
+                      fontSize: "clamp(12px, 2.5vw, 15px)", // responsive button
                     }}
                   >
                     Request Demo
@@ -81,6 +81,19 @@ const HeroArea = () => {
         </div>
       </div>
 
+      {/* Extra mobile optimization */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .tp-hero-2-title {
+            font-size: 22px !important;
+            line-height: 1.3;
+          }
+
+          .tp-hero-2-content {
+            max-width: 90%;
+          }
+        }
+      `}</style>
     </section>
   );
 };
